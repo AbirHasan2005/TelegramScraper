@@ -3,7 +3,7 @@ Using this tool you can easily add so many members from any group to your group.
 
 ## Telegram Group:
 <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-Join Telegram group for help, feedback, details and chats. Group Owner: @AbirHasan2005
+### Join Telegram group for help, feedback, details and chats. Group Owner: @AbirHasan2005
 
 ## How to Setup API:
 - Go to https://my.telegram.org and Login.
@@ -34,6 +34,8 @@ $ `python3 smsbot.py members.csv`
 - Add users to your group
 
 $ `python3 add2group.py members.csv`
+### Or,
+$ `python3 Adder.py`
 
 ---
 
