@@ -43,6 +43,6 @@ $ `python3 Adder.py`
 
 ## Follow Me on:
 ### GitHub: https://github.com/AbirHasan2005
-### Twitter: https://twitter.com/AbirHasan2005  ![Twitter Follow](https://img.shields.io/twitter/follow/AbirHasan2005?style=social)
+### Twitter: https://twitter.com/AbirHasan2005  ![Twitter Follow](https://camo.githubusercontent.com/74439a164d6f60221567b208e7f67f9eadea22f5/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f41626972486173616e323030353f7374796c653d736f6369616c)
 ### Facebook: https://facebook.com/AbirHasan2005
 ### Instagram: https://instagram.com/AbirHasan2005
