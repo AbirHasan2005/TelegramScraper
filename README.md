@@ -1,11 +1,9 @@
 # TelegramScraper v1.3
 Using this tool you can easily add so many members from any group to your group. Less than 2 minutes. Super easy. Time saver. But this tool is only for educational purpose. You could be banned from Telegram. So be careful. Recommanded to use this tool only on Termux.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AbirHasan2005/TelegramScraper?label=Repo%20Size)
-
 ## Telegram Group:
 <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-### Join Telegram group for help, feedback, details and chats. Group Owner: @AbirHasan2005
+#### Join Telegram group for help, feedback, details and chats. Group Owner: @AbirHasan2005
 
 ## How to Setup API:
 - Go to https://my.telegram.org and Login.
@@ -36,13 +34,12 @@ $ `python3 smsbot.py members.csv`
 - Add users to your group
 
 $ `python3 add2group.py members.csv`
-### Or,
-$ `python3 Adder.py`
 
+- If you need more help Join [Telegram Group](http://t.me/linux_repo)
 ---
 
 ## Follow Me on:
-### GitHub: https://github.com/AbirHasan2005
-### Twitter: https://twitter.com/AbirHasan2005  ![Twitter Follow](https://camo.githubusercontent.com/74439a164d6f60221567b208e7f67f9eadea22f5/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f41626972486173616e323030353f7374796c653d736f6369616c)
-### Facebook: https://facebook.com/AbirHasan2005
-### Instagram: https://instagram.com/AbirHasan2005
+GitHub: https://github.com/AbirHasan2005
+Twitter: https://twitter.com/AbirHasan2005
+Facebook: https://facebook.com/AbirHasan2005
+Instagram: https://instagram.com/AbirHasan2005

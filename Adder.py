@@ -45,7 +45,7 @@ if not client.is_user_authorized():
     client.sign_in(phone, input('40779'))
 
 users = []
-with open(r"Scrapped.csv", encoding='UTF-8') as f:  #Enter your file name
+with open(r"members.csv", encoding='UTF-8') as f:  #Enter your file name
     rows = csv.reader(f,delimiter=",",lineterminator="\n")
     next(rows, None)
     for row in rows:
