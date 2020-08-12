@@ -1,4 +1,4 @@
-# TelegramScraper v1.3
+# TelegramScraper v1.3 ![GitHub repo size](https://img.shields.io/github/repo-size/AbirHasan2005/TelegramScraper?label=Repo%20Size)
 Using this tool you can easily add so many members from any group to your group. Less than 2 minutes. Super easy. Time saver. But this tool is only for educational purpose. You could be banned from Telegram. So be careful. Recommanded to use this tool only on Termux.
 
 ## Telegram Group:
@@ -35,11 +35,12 @@ $ `python3 smsbot.py members.csv`
 
 $ `python3 add2group.py members.csv`
 
-- If you need more help Join [Telegram Group](http://t.me/linux_repo)
+#### Or,
+
+$ `python3 adder.py`
+
+- If you need more help <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue"></a>
 ---
 
 ## Follow Me on:
-GitHub: https://github.com/AbirHasan2005
-Twitter: https://twitter.com/AbirHasan2005
-Facebook: https://facebook.com/AbirHasan2005
-Instagram: https://instagram.com/AbirHasan2005
+<a href="https://github.com/AbirHasan2005"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive"></a> <a href="https://twitter.com/AbirHasan2005"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational"></a> <a href="https://facebook.com/AbirHasan2005"><img src="https://img.shields.io/badge/Facebook-Follow%20on%20Facebook-blue"></a> <a href="https://instagram.com/AbirHasan2005"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important"></a>
