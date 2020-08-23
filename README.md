@@ -29,15 +29,15 @@ $ `python3 scraper.py`
 - (`members.csv` is default if you changed name use it)
 - Send Bulk SMS To Collected Data
 
-$ `python3 smsbot.py members.csv`
+$ `python3 smsbot.py members.csv` [Optional]
 
 - Add users to your group
 
-$ `python3 add2group.py members.csv`
+$ `python3 adder.py `
 
 #### Or,
 
-$ `python3 adder.py`
+$ `python3 add2group.py members.csv`
 
 - If you need more help <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 ---
