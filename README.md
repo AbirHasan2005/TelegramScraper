@@ -3,7 +3,7 @@ Using this tool you can easily add so many members from any group to your group.
 
 ## Telegram Group:
 <a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-#### Join Telegram group for help, feedback, details and chats. Group Owner: @AbirHasan2005
+#### Join Telegram group for help, feedback, details and chats.
 
 ## How to Setup API:
 - Go to https://my.telegram.org and Login.
@@ -12,7 +12,7 @@ Using this tool you can easily add so many members from any group to your group.
 - After clicking Create App, Copy "api_id" & "api_hash" from there. (This will be used in `setup.py`)
 <p><img src="https://i1.wp.com/python.gotrained.com/wp-content/uploads/2019/01/desc.png?resize=768%2C479&ssl=1"></p>
 
-## How To Install:
+## How To Install? (Only for Termux!):
 
 $ `pkg install git python -y`
 
