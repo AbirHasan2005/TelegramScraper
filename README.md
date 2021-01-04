@@ -1,4 +1,4 @@
-# TelegramScraper v1.3 ![GitHub repo size](https://img.shields.io/github/repo-size/AbirHasan2005/TelegramScraper?label=Repo%20Size)
+# TelegramScraper v1.4 ![GitHub repo size](https://img.shields.io/github/repo-size/AbirHasan2005/TelegramScraper?label=Repo%20Size)
 Using this tool you can easily add so many members from any group to your group. Less than 2 minutes. Super easy. Time saver. But this tool is only for educational purpose. You could be banned from Telegram. So be careful. Recommanded to use this tool only on Termux.
 
 ## Telegram Group:
