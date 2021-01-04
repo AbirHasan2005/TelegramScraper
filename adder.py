@@ -1,5 +1,5 @@
 #!/bin/env python3
-# By @AbirHasan2005
+# (c) @AbirHasan2005
 # Telegram Group: http://t.me/linux_repo
 # Please give me credits if you use any codes from here.
 
@@ -91,7 +91,7 @@ n = 0
 for user in users:
     n += 1
     if n % 80 == 0:
-        sleep(60)
+        time.sleep(60)
     try:
         print("Adding {}".format(user['id']))
         if mode == 1:
