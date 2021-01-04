@@ -47,7 +47,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Enter the code: '+yo))
+    client.sign_in(phone, input(gr+'[+] Enter the verification code: '+yo))
  
 os.system('clear')
 banner()
