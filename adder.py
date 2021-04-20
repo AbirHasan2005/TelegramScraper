@@ -22,9 +22,9 @@ import traceback
 import time
 import random
 
-api_id = 1655760   #Enter Your 7 Digit Telegram API ID.
-api_hash = '887513e49c5e3004ea92c0104403c4c3'   #Enter Yor 32 Character API Hash
-phone = '+17099076670'   #Enter Your Mobilr Number With Country Code.
+api_id =    #Enter Your 7 Digit Telegram API ID.
+api_hash = ''   #Enter Yor 32 Character API Hash
+phone = ''   #Enter Your Mobilr Number With Country Code.
 client = TelegramClient(phone, api_id, api_hash)
 async def main():
     # Now you can use all client methods listed below, like for example...
@@ -54,7 +54,7 @@ with open(r"members.csv", encoding='UTF-8') as f:  #Enter your file name
 
 chats = []
 last_date = None
-chunk_size = 200
+chunk_size = 900
 groups = []
 
 result = client(GetDialogsRequest(
