@@ -45,11 +45,13 @@ with open(r"members.csv", encoding='UTF-8') as f:  #Enter your file name
     rows = csv.reader(f,delimiter=",",lineterminator="\n")
     next(rows, None)
     for row in rows:
-        user = {}
-        user['username'] = row[0]
-        user['id'] = int(row[1])
-        user['access_hash'] = int(row[2])
-        user['name'] = row[3]
+        user = {
+            'username': row[0],
+            'id': int(row[1]),
+            'access_hash': int(row[2]),
+            'name': row[3],
+        }
+
         users.append(user)
 
 chats = []
@@ -74,11 +76,8 @@ for chat in chats:
         continue
 
 print('Choose a group to add members: ')
-i = 0
-for group in groups:
+for i, group in enumerate(groups):
     print(str(i) + '- ' + group.title)
-    i += 1
-
 g_index = input("Enter a Number: ")
 target_group = groups[int(g_index)]
 

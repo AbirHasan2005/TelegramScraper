@@ -49,7 +49,7 @@ if not client.is_user_authorized():
     os.system('clear')
     banner()
     client.sign_in(phone, input(gr+'[+] Enter the sent code: '+re))
- 
+
 os.system('clear')
 banner()
 input_file = sys.argv[1]
@@ -58,18 +58,20 @@ with open(input_file, encoding='UTF-8') as f:
     rows = csv.reader(f,delimiter=",",lineterminator="\n")
     next(rows, None)
     for row in rows:
-        user = {}
-        user['username'] = row[0]
-        user['id'] = int(row[1])
-        user['access_hash'] = int(row[2])
-        user['name'] = row[3]
+        user = {
+            'username': row[0],
+            'id': int(row[1]),
+            'access_hash': int(row[2]),
+            'name': row[3],
+        }
+
         users.append(user)
- 
+
 chats = []
 last_date = None
 chunk_size = 200
 groups=[]
- 
+
 result = client(GetDialogsRequest(
              offset_date=last_date,
              offset_id=0,
@@ -78,29 +80,26 @@ result = client(GetDialogsRequest(
              hash = 0
          ))
 chats.extend(result.chats)
- 
+
 for chat in chats:
     try:
         if chat.megagroup== True:
             groups.append(chat)
     except:
         continue
- 
+
 print(gr+'[+] Choose a group to add members: '+re)
-i=0
-for group in groups:
+for i, group in enumerate(groups):
     print(str(i) + '- ' + group.title)
-    i+=1
- 
 g_index = input(gr+"Enter a Number: "+re)
 target_group=groups[int(g_index)]
- 
+
 target_group_entity = InputPeerChannel(target_group.id,target_group.access_hash)
- 
+
 print(gr+"[1] Add member by user ID\n[2] Add member by username ")
-mode = int(input(gr+"Input: "+re)) 
+mode = int(input(gr+"Input: "+re))
 n = 0
- 
+
 for user in users:
     n += 1
     if n % 50 == 0:
