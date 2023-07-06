@@ -1,5 +1,5 @@
 # TelegramScraper ([Read Below](https://github.com/AbirHasan2005/TelegramScraper#use-telegram-bot))
-Using this tool you can easily add so many members from any group to your group. Less than 2 minutes. Super easy. Time saver. But this tool is only for educational purpose. You could be banned from Telegram. So be careful. Recommanded to use this tool only on Termux.
+It can scrape and add members from one chat to another chat using some Telegram accounts. Also it can scrape hidden members of group going through group messages. Bot has very user-friendly interface.
 
 ## Telegram Group:
 <a href="https://t.me/JoinOT"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
