@@ -40,7 +40,7 @@ $ `python3 add2group.py members.csv`
 ---
 
 ## Use Paid Script
-This is very old version. I already made a better Telegram Bot or Paid Script Version where you can login your accounts and scrape members to add from one chat to another or export `.csv` data of members list. Bot or Script both are very easy to use. [Buy Only From Here](https://t.me/HireDev/9). So I don't want to work on this tool anymore, it's worthless. So use paid version only. But remember it will not bypass Telegram limitations. So read about Telegram limitations by your own and then use the script or bot. If you need more help you can contact in [Support Group](https://t.me/JoinOT).
+This is very old version. I already made a better Telegram Bot or Paid Script Version where you can login your accounts and scrape members to add from one chat to another or export `.csv` data of members list. Also you can **scrape hidden members** of a group. Bot or Script both are very easy to use. [Buy Only From Here](https://t.me/HireDev/9). So I don't want to work on this tool anymore, it's worthless. So use paid version only. But remember it will not bypass Telegram limitations. So read about Telegram limitations by your own and then use the script or bot. If you need more help you can contact in [Support Group](https://t.me/JoinOT).
 ![Screenshot 1](https://telegra.ph/file/fe4b130c173f77a5909d3.png)
 ![Screenshot 2](https://telegra.ph/file/b90531cee5277689c659f.png)
 ![Screenshot 3](https://telegra.ph/file/b4e9fd7d59576b3174b10.png)
