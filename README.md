@@ -1,6 +1,9 @@
 # TelegramScraper ([Read Below](https://github.com/AbirHasan2005/TelegramScraper#use-paid-script))
 It can scrape and add members from one chat to another chat using some Telegram accounts. Also it can scrape hidden members of group going through group messages. Bot has very user-friendly interface.
 
+### Also Check Out!
+I have a Telegram Auto DM Bot Script. This will use your Telegram accounts to Auto DM the people from scraped `members.csv` file. For that [Contact Here](https://t.me/AkibHridoy)
+
 ## How to Setup:
 - Go to https://my.telegram.org and Login.
 - Click on API development tools and fill the required fields.
