@@ -17,35 +17,3 @@ This is very old version. I already made a better Telegram Bot or Paid Script Ve
 ![Screenshot 3](https://telegra.ph/file/b4e9fd7d59576b3174b10.png)
 
 **💬 It operates within Telegram’s official system — no hacks, no risks — just pure automation at its best.**
-
-
-### Channel Limit
-
-Telegram allows up to 200 members to be added manually to a channel.
-
-The bot respects this limit. Simple. Clean.
-
-
-### Group Limit – Practically Unlimited
-
-For groups, you can add unlimited members — until Telegram itself steps in.
-
-That means hundreds or even thousands can be added if you use smart tactics (like aged accounts).
-
-
-### Account Strategy
-
-New accounts = high risk of ban.
-
-Old, fresh accounts = better performance, higher limits.
-
-Got banned? No worries. Just log in a new account — the bot keeps working without downtime.
-
-
-## Why It Works
-
-- Fully automated.
-
-- No API limits — this works through Telegram’s own interface.
-
-Built for marketers, promoters, and anyone who wants fast, silent, and scalable growth.
