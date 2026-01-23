@@ -8,7 +8,7 @@ I have a Telegram Auto DM Bot Script. This will use your Telegram accounts to Au
 ### [Watch on YouTube](https://youtu.be/9CetI-u7Suk)
 
 ## Extra:
-With extra you can get Auto DM script. That will use your Telegram accounts to DM the people from `.csv` file.
+With extra you can get Auto DM script. That will use your Telegram accounts to automatically DM the people from `.csv` file. [Know about Telegram limitations?](https://t.me/TheFAQs/11)
 
 ## Use Paid Script
 This is very old version. I already made a better Telegram Bot or Paid Script Version where you can login your accounts and scrape members to add from one chat to another or export `.csv` data of members list. Also you can **scrape hidden members** of a group. Bot or Script both are very easy to use. [Buy Only From Here](https://t.me/HireDev/9). So I don't want to work on this tool anymore, it's worthless. So use paid version only. But remember it will not bypass Telegram limitations. So read about Telegram limitations by your own and then use the script or bot. If you need more help you can contact [ME](https://t.me/AkibHridoy).
