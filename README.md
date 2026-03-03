@@ -1,4 +1,4 @@
-# Telegram Scraper v1.6
+# Telegram Scraper v1.6 [Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
 
 A powerful, multi-account Telegram group member scraper and adder with encrypted session storage, automatic account rotation, and a rich terminal UI.
 
@@ -19,6 +19,7 @@ A powerful, multi-account Telegram group member scraper and adder with encrypted
 - **Structured Logging** — Rotating file logs (never logs sensitive data like session strings)
 - **Atomic CSV Writes** — Data written to temp file first, then replaced — no corruption on crash
 
+[Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
 ---
 
 ## Prerequisites
@@ -189,6 +190,8 @@ Scrapes members from **message history and mentions** — useful when the member
 
 **Best for:** Private groups with hidden member lists, or when you want to capture active participants.
 
+[Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
+
 #### Scrape Non-Hidden Members
 
 Scrapes from the group's **official members list** (visible when you tap "Members" in group info).
@@ -338,6 +341,7 @@ TelegramScraper/
 └── scrape_checkpoint.json   # Resume checkpoint (not in repo)
 ```
 
+[Get Access to ALL FILES](https://github.com/AbirHasan2005/TelegramScraper?tab=readme-ov-file#support--pricing)
 ---
 
 ## Security
