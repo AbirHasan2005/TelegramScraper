@@ -423,6 +423,8 @@ For hidden member scraping, progress is automatically saved to a checkpoint file
 | **Price** | 80 USD |
 | **Purchase & Support** | [Contact on Telegram](https://t.me/AkibHridoy) |
 
+You will get full Python source code access for lifetime & future updates.
+
 ### Developer
 
 **Abir Hasan**
