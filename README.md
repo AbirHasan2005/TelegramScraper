@@ -10,6 +10,7 @@ A powerful, multi-account Telegram group member scraper and adder with encrypted
 - **3 Login Methods** — Phone number (OTP + 2FA), QR code scan, or Telegram Desktop TData import
 - **2 Scraping Modes** — Scrape from the visible members list, or extract hidden members from message history
 - **2 Adding Modes** — Rush Adder (tracks progress by removing added members from CSV) or Calm Adder (keeps CSV intact)
+- **Message Broadcast** — Send a formatted DM to all scraped members from a Markdown file, with 30–60s delays and account rotation
 - **Session Encryption** — All session strings encrypted with Fernet (AES-128) using PBKDF2 key derivation
 - **FloodWait Handling** — Automatic wait with jitter for small delays; switches account on large delays (1hr+)
 - **Checkpoint Resume** — Interrupted hidden-member scrapes can be resumed from where they left off
@@ -90,7 +91,7 @@ python main.py
 When you launch the tool, you'll see the main menu:
 
 ```
-TelegramScraper v1.5
+TelegramScraper v1.6
 ℹ 0 sessions loaded (check Manage Sessions for status)
 
 ┌─────────────────────┐
@@ -99,7 +100,8 @@ TelegramScraper v1.5
 │  01  Login Telegram Account
 │  02  Members Scraper
 │  03  Members Adder
-│  04  Manage Sessions
+│  04  Message Broadcast
+│  05  Manage Sessions
 │
 │  99  About
 │  00  Exit
@@ -111,6 +113,7 @@ TelegramScraper v1.5
 1. **Login** one or more Telegram accounts (Option 01)
 2. **Scrape** members from a source group (Option 02)
 3. **Add** scraped members to a target group (Option 03)
+4. **Broadcast** a message to all scraped members (Option 04)
 
 ---
 
@@ -256,7 +259,55 @@ If you have multiple accounts logged in, the adder cycles through them automatic
 
 ---
 
-### Option 04 — Manage Sessions
+### Option 04 — Message Broadcast
+
+Send a formatted direct message to all scraped members in `members.csv`.
+
+#### How It Works
+
+1. On first use, a sample template file (`message_template.md`) is created in the project root — you can edit it or use your own `.md` file
+2. A **syntax guide** is displayed showing supported Markdown formatting and how it renders on Telegram
+3. Enter the path to your `.md` message file
+4. The message is converted to Telegram-compatible HTML and a **preview** is shown for confirmation
+5. After confirming, messages are sent one-by-one to each user in `members.csv`
+6. Each successfully messaged user is **removed from `members.csv`** (allows resuming on restart)
+
+#### Supported Markdown Syntax
+
+| Markdown | Telegram Result |
+|---|---|
+| `**bold**` | **bold** |
+| `*italic*` | *italic* |
+| `~~strikethrough~~` | ~~strikethrough~~ |
+| `[link text](url)` | Clickable link |
+| `` `inline code` `` | `monospace` |
+| ```` ```code block``` ```` | Code block |
+| `# Header` | **Bold header line** |
+| `- list item` | Bullet point |
+
+> **Note:** The maximum message length is 4096 characters (after HTML conversion). Messages exceeding this limit will be rejected before sending.
+
+#### Delay & Rate Limiting
+
+- **30–60 seconds** random delay between each message (mimics human behavior)
+- **Small FloodWait (< 1 hour):** Waits with jitter, then retries
+- **Large FloodWait (>= 1 hour):** Switches to the next available account
+- Account cooldowns are persisted in `account_cooldowns.json`
+
+#### Error Handling
+
+| Scenario | Action |
+|---|---|
+| User blocked the account | Skipped, removed from CSV |
+| User account deactivated | Skipped, removed from CSV |
+| User not found (invalid ID/username) | Skipped, removed from CSV |
+| User has privacy restrictions | Skipped, **kept in CSV** (may change later) |
+| Sending account deactivated/banned | Marked inactive, switches to next account |
+| Ctrl+C interrupted | Stops gracefully, CSV reflects partial progress |
+
+---
+
+### Option 05 — Manage Sessions
 
 View, test, and clean up your stored Telegram sessions.
 
@@ -332,6 +383,7 @@ TelegramScraper/
 │       ├── login.py         # Phone, QR, TData login flows
 │       ├── scrape_members.py# Non-hidden & hidden member scraping
 │       ├── add_members.py   # Rush & calm member adding
+│       ├── broadcast_message.py # Message broadcast to scraped members
 │       ├── manage_sessions.py # List, test, cleanup sessions
 │       └── about.py         # About screen
 │
