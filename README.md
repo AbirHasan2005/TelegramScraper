@@ -1,21 +1,22 @@
 <div align="center">
 
-# Telegram Scraper v1.7
+# Telegram Scraper v1.8 — Python Telegram Member Scraper, Hidden Group Extractor, Channel Comment Scraper &amp; AI Lead Finder
 
-**A powerful, multi-account Telegram group &amp; channel scraper and adder** — with encrypted session storage, automatic account rotation, proxy + device anti-detection, message broadcasting, and a rich terminal UI.
-
-<br/>
-
-[![Buy Now](https://img.shields.io/badge/Buy%20Now-%2480%20USD-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/)
-&nbsp;
-[![Buy on Telegram](https://img.shields.io/badge/Buy%20on%20Telegram-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
-&nbsp;
-[![Screenshots and Demo](https://img.shields.io/badge/Screenshots%20%26%20Demo-View%20Online-24292F?style=for-the-badge&logo=googlechrome&logoColor=white)](https://telegramscraper.shop/)
+**A production-ready, multi-account Telegram scraping and automation toolkit built on the MTProto User API** — extract visible and hidden group members, harvest broadcast channel audiences via linked discussions and post comments, discover niche groups with AI Lead Finder, add members with automatic `FloodWait` account rotation, and broadcast Markdown DMs from a rich terminal UI.
 
 <br/>
 
+[![Buy Now](https://img.shields.io/badge/Buy%20Now-%2480%20USD%20(Complete%20Toolkit)-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/pricing)
+&nbsp;
+[![Buy on Telegram](https://img.shields.io/badge/Live%20Demo%20%26%20Buy-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
+&nbsp;
+[![Screenshots and Demo](https://img.shields.io/badge/Website%20%26%20Docs-telegramscraper.shop-24292F?style=for-the-badge&logo=googlechrome&logoColor=white)](https://telegramscraper.shop/)
+
+<br/>
+
+![Version](https://img.shields.io/badge/Version-v1.8-229ED9?style=flat-square)
 ![Source Code](https://img.shields.io/badge/Source%20Code-Full%20%26%20Editable-229ED9?style=flat-square)
-![Access](https://img.shields.io/badge/Access-Lifetime-2CA5E4?style=flat-square)
+![Access](https://img.shields.io/badge/License-One--Time%20Payment-2CA5E4?style=flat-square)
 ![Updates](https://img.shields.io/badge/Updates-Free%20Forever-229ED9?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Termux-555?style=flat-square)
@@ -24,88 +25,120 @@
 
 ---
 
-## <img src="assets/icons/whats-included.svg" width="24" height="24" alt="" /> What You Get
+## <img src="assets/icons/whats-included.svg" width="24" height="24" alt="" /> What You Get ($80 One-Time — Complete Toolkit)
 
-Telegram Scraper is a complete, production-ready toolkit for **scraping group members and channel audiences, adding them to your groups, and broadcasting messages** — all from a clean terminal interface, across as many accounts as you need, with built-in proxy + device anti-detection.
+[**Telegram Scraper v1.8**](https://telegramscraper.shop/) is a self-hosted Python CLI suite for **scraping Telegram group members (including hidden member lists), extracting channel comment &amp; discussion audiences, discovering niche communities across multiple accounts, adding members to target groups, and sending targeted DM broadcasts** — with sticky proxy binding, mobile device fingerprint spoofing, and Fernet-encrypted local sessions.
 
-This is a paid product. Your **one-time purchase of $80 USD** includes:
+This is a commercial software toolkit. Your **one-time payment of $80 USD** ([view pricing details](https://telegramscraper.shop/pricing)) includes **every module** — never sold per-module and never billed as a subscription:
 
-- **Complete Python source code** — fully editable, no obfuscation
-- **Lifetime access** — buy once, use it forever
-- **Free future updates** — every new version at no extra cost
-- **Setup support** — help getting it running on your machine
-- **Cross-platform** — runs on Windows, macOS, Linux, and Termux (Android)
+- **[Group Member Scraper (`Option 02`)](https://telegramscraper.shop/scraper)** — Visible participant roster scraper + hidden member extractor (message history, `@mentions`, and join events)
+- **[Channel Audience Scraper (`Option 03`)](https://telegramscraper.shop/channel-scraper)** — Two-phase OSINT scraper for broadcast channels via post comment authors + linked discussion group roster &amp; history
+- **[Members Adder (`Option 04`)](https://telegramscraper.shop/adder)** — Rush &amp; Calm group member adder with `PeerFlood` contact-workaround, human jitter, and automatic multi-account rotation
+- **[Message Broadcast / Mass DM (`Option 05`)](https://telegramscraper.shop/sender)** — Markdown-to-Telegram HTML DM sender with live preview, dry-run estimator, and auto-resume
+- **[AI Lead Finder &amp; Niche Discovery (`Option 08`)](https://telegramscraper.shop/ai-telegram-scraper)** — Multi-account Telegram keyword search, spelling expansion, similar-channel graph traversal, and optional Gemini/Vertex AI discovery
+- **Full, Unobfuscated Python Source Code** — Inspect, audit, and customize every `.py` file for your own workflows
+- **Lifetime Free Updates &amp; 1-on-1 Setup Support** — Run on Windows, macOS, Linux VPS, or [Android Termux](https://telegramscraper.shop/blog/telegram-scraper-termux-android)
 
 <div align="center">
 
-[![Buy Now](https://img.shields.io/badge/Buy%20Now-%2480%20USD-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/)
+[![Get the Complete Toolkit — $80 USD](https://img.shields.io/badge/Get%20Complete%20Toolkit-%2480%20One--Time-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/pricing)
 &nbsp;
-[![Buy on Telegram](https://img.shields.io/badge/Buy%20on%20Telegram-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
+[![Ask for a Free Live Demo on Telegram](https://img.shields.io/badge/Request%20Live%20Demo-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
 
 </div>
 
 ---
 
-## <img src="assets/icons/features.svg" width="24" height="24" alt="" /> Features
+## <img src="assets/icons/features.svg" width="24" height="24" alt="" /> Core Modules &amp; What's New in v1.8
 
-### Accounts &amp; Sessions
-- **Multi-Account Support** — Log in multiple Telegram accounts and rotate between them automatically
-- **3 Login Methods** — Phone number (OTP + 2FA), QR code scan, or Telegram Desktop TData import
-- **Session Encryption** — All session strings (and proxy credentials) encrypted with Fernet (AES-128) using PBKDF2 key derivation
-- **Session Management** — List all sessions, test connectivity, and clean up inactive accounts
+### 1. [Telegram Group Member Scraper (Visible &amp; Hidden Rosters)](https://telegramscraper.shop/scraper)
+- **Visible Roster Mode (`01`):** Extracts the public member list of any group or supergroup, filtering out bots and deduplicating by User ID.
+- **Hidden Member Recovery Mode (`02`):** When group admins hide the participant list ([`CHAT_ADMIN_REQUIRED`](https://telegramscraper.shop/blog/telegram-chat-admin-required-error-fix)), the scraper walks message history, `@username` mentions, clickable text mentions, and `"X joined the group"` service messages to recover active participants and recent joiners ([learn how hidden member extraction works](https://telegramscraper.shop/blog/telegram-hidden-members)).
+- **Dry-Run Group Preview (`03`):** Inspect a target group's member count, check whether its roster is visible or hidden, get a mode recommendation, and preview 5 sample members (`@username`, User ID, last-seen status) before running a full scrape.
+- **On-the-Fly Scrape Filters &amp; Multi-Format Export (`04`):** Filter scrapes to keep **only users with a public `@username`** or **exclude inactive (`long_time_ago`) accounts**, and export your data to **[CSV, `@username` `.txt` lists, or structured `.json`](https://telegramscraper.shop/export-to-csv)**.
 
-### Scraping
-- **2 Group Scraping Modes** — Scrape from the visible members list, or extract hidden members from message history, mentions, and "joined the group" service messages
-- **Channel Scraper** — Extract a broadcast channel's audience via its linked discussion group's roster and the authors of comments on recent posts (the only viable approach, since Telegram blocks channel subscriber lists for non-admins)
-- **Checkpoint Resume** — Interrupted hidden-member and channel scrapes can be resumed from where they left off
+### 2. [Telegram Channel Scraper (Post Comments + Linked Discussion)](https://telegramscraper.shop/channel-scraper)
+- Telegram's servers block non-admins from reading a broadcast channel's direct subscriber list (`CHAT_ADMIN_REQUIRED`). No library or fork can bypass that server-side check.
+- **Phase 1 — Post Comment Authors:** Scans channel posts and extracts every user who commented on discussion threads.
+- **Phase 2 — Linked Discussion Supergroup:** Auto-joins the channel's linked discussion group and merges **both** its visible roster and full message history scan to capture members beyond the ~10k roster cap.
+- **Dry-Run Channel Preview &amp; Takeout Mode:** Verify whether a target channel has a linked discussion group before scraping, and optionally route bulk reads through Telegram's Takeout API.
 
-### Adding &amp; Broadcasting
-- **2 Adding Modes** — Rush Adder (tracks progress by removing added members from CSV) or Calm Adder (keeps CSV intact)
-- **Message Broadcast** — Send a formatted DM to all scraped members from a Markdown file, with 30–60s delays and account rotation
+### 3. [AI Telegram Lead Finder &amp; Multi-Account Search (`Option 08`)](https://telegramscraper.shop/ai-telegram-scraper)
+- **Start from a niche, not a link:** Enter a market concept (e.g., `copy trading` or `prop firm`) and the tool expands it into search spellings (`copy trading`, `copytrading`, `copy_trading`, etc.).
+- **Multi-Account Global Search:** Searches every keyword across **all logged-in Telegram accounts** and merges results — solving [why Telegram global search shows so few groups on a single account](https://telegramscraper.shop/blog/why-telegram-search-shows-few-groups).
+- **4 Discovery Vectors:** Native multi-account Telegram search, Telegram's *"Similar Channels"* graph, seed links, and optional Google Gemini / Vertex AI web search.
+- **Smart Gate &amp; Keyword Memory:** Automatically swaps broadcast channels for their linked discussion groups (dropping channels that have none), tracks how many real members each keyword earned, and retires dead search terms after 3 empty runs. Works **with or without AI configured**.
 
-### Anti-Detection
-- **Proxy Manager** — Maintain a pool of SOCKS5/SOCKS4/HTTP proxies and bind one *stickily* to each account (residential/mobile recommended; datacenter IPs are flagged by Telegram)
-- **Device/Client Spoofing** — New logins get a realistic sticky mobile device fingerprint instead of the default "Pyrogram on Windows" signature
-- **Centralized Rate-Limiting** — Human-like jitter and a single FloodWait policy (small waits absorbed in place, large ones cooldown + rotate account) across every scraper and adder
+### 4. [Telegram Member Adder (`Option 04`)](https://telegramscraper.shop/adder) &amp; [Mass DM Broadcaster (`Option 05`)](https://telegramscraper.shop/sender)
+- **Rush &amp; Calm Adder Modes:** Remove processed users from `members.csv` automatically (Rush) for clean resume, or keep `members.csv` intact (Calm). Includes a `PeerFlood` temporary-contact workaround and **Dry-Run Adder Preview (`03`)** to verify target group invite permissions and estimate completion time.
+- **Markdown Message Broadcast:** Write your DM in Markdown (`message_template.md`), preview the converted Telegram HTML in your terminal, run a **Dry-Run Broadcast Preview (`[d]`)** to check active accounts and estimated duration, and send with randomized human delays (`30–60s` default).
 
-### Safety &amp; Reliability
-- **FloodWait Handling** — Automatic wait with jitter for small delays; switches account on large delays (1hr+)
-- **Account Cooldown Tracking** — Persistent cooldown tracking across sessions with automatic expiry
-- **Atomic CSV Writes** — Data written to temp file first, then replaced — no corruption on crash
-- **Structured Logging** — Rotating file logs (never logs sensitive data like session strings)
-- **Rich Terminal UI** — Progress bars, spinners, styled tables, and color-coded output
+### 5. New in v1.8 — Setup Automation, Post-Run Reports &amp; Error Translator
+- **One-Command Setup (`setup.bat` &amp; `setup.sh`):** Checks Python `>= 3.8`, installs dependencies and `TgCrypto`, creates `.env` from `.env.example` (prompting for `API_ID` / `API_HASH`), runs `check_setup.py`, and launches `main.py`.
+- **Built-In Healthcheck (`python check_setup.py` / `Option 09 -> 07`):** Verifies Python, `TgCrypto` C-extension, required packages, and `.env` credentials with a clear pass/fail table without logging secrets.
+- **Post-Run Summary Reports (`logs/last_run_summary.txt`):** Every scrape, add, or broadcast run renders a detailed terminal summary (including skip reasons like privacy restrictions vs. already in group, accounts used, and `FloodWait` hits) and saves it to `logs/last_run_summary.txt`.
+- **Plain-English Telegram Error Translator:** Translates cryptographic/RPC exceptions (`CHAT_ADMIN_REQUIRED`, `PEER_FLOOD`, `USER_PRIVACY_RESTRICTED`, `FLOOD_WAIT_X`, `AUTH_KEY_UNREGISTERED`, etc.) into clear **"What happened"** and **"Tip: What to do"** guidance directly in the terminal.
+
+### 6. Anti-Detection, Proxies &amp; Local Security
+- **Sticky Mobile Device Spoofing:** Assigns each new login a realistic mobile device profile (*Samsung Galaxy S24 Ultra / Android 14*, *iPhone 15 Pro Max / iOS 17.5.1*) persisted in `account_metadata.json`.
+- **Sticky Proxy Manager (`Option 06`):** Bind SOCKS5, SOCKS4, or HTTP residential/mobile proxies stickily per account so an account never switches IP mid-session.
+- **Fernet AES-128 Session Encryption:** All session strings and proxy credentials are encrypted at rest using PBKDF2-HMAC-SHA256 (`480,000` iterations). Nothing ever leaves your machine.
 
 ---
 
-## ⭐ Reviews from Clients
+## 📊 Why MTProto User API vs. Telegram Bot API &amp; Cloud Scrapers
 
-Rated **4.8 / 5** across **640+ buyers**. Here's what people say after putting Telegram Scraper to work:
+Many free scripts and SaaS scrapers rely on the [Telegram Bot API](https://telegramscraper.shop/blog/telegram-scraper-vs-bot-api) or browser DOM scraping. Here is how **Telegram Scraper v1.8** compares:
 
-<sub><b>Verified buyers</b> — DAE EUROPE, Light | Airaa, Cinz, NAKAMA, El, Ivan, Blood007, ABC - Droll, Sallem, Cryptowiz, and hundreds more. See their proof screenshots on the <a href="https://telegramscraper.shop/">website</a>.</sub>
+| Capability | Telegram Scraper v1.8 (MTProto User API) | Standard Telegram Bot API | Cloud SaaS / Browser Scrapers |
+|---|---|---|---|
+| **Scrape Visible Group Members** | ✅ Full roster (`get_participants`) | ❌ Blocked unless bot is admin | ⚠️ Capped by web scroll buffer |
+| **Scrape Hidden Group Members** | ✅ History + `@mentions` + join events | ❌ Impossible | ❌ Impossible |
+| **Scrape Channel Audience** | ✅ Post comments + linked discussion | ❌ Blocked (`CHAT_ADMIN_REQUIRED`) | ⚠️ Partial or unsupported |
+| **Multi-Account Niche Discovery** | ✅ Built-in (`Option 08` AI Lead Finder) | ❌ No global user search | ❌ Single-session only |
+| **Auto `FloodWait` Account Rotation** | ✅ Persistent cooldowns + auto-switch | ❌ Single bot token | ❌ Manual intervention |
+| **Sticky Device &amp; Proxy Anti-Detection** | ✅ Per-account mobile fingerprint + proxy | ➖ N/A | ❌ Shared datacenter IPs (high ban risk) |
+| **Data Privacy &amp; Session Storage** | ✅ 100% local, Fernet AES-128 encrypted | ✅ Local | ❌ Credentials uploaded to 3rd-party cloud |
+| **Cost** | **[`$80 USD` one-time](https://telegramscraper.shop/pricing)** (free updates forever) | Free (severely limited) | `$30–$99+/month` recurring credits |
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Best Telegram scraper I have used. Setup was straightforward and support was responsive." — **Cinz**
+### ⚠️ Before You Buy: Honest Telegram API Limits
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Hidden member recovery is a game-changer. Nothing else on the market does this." — **El**
+We believe in transparent engineering rather than "100% magic" marketing claims. Before purchasing, please note Telegram's server-side rules ([read the full FAQ](https://telegramscraper.shop/faq)):
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Works exactly as described. Reliable tool for community migration." — **DAE EUROPE**
+1. **Broadcast Channels Without a Linked Discussion Group:** Telegram blocks non-admins from reading a channel's subscriber list (`CHAT_ADMIN_REQUIRED`). Our [Channel Scraper](https://telegramscraper.shop/channel-scraper) extracts users who comment on posts and members of the channel's linked discussion group. If a channel has comments disabled and no linked discussion group, no tool can extract its subscribers.
+2. **Hidden Group Rosters:** When a group hides its member list, Hidden Mode (`Option 02 -> 02`) recovers active posters, `@mentions`, and users whose `"joined the group"` service message is still in history. Totally silent users whose join notice was deleted cannot be seen by any non-admin tool.
+3. **Phone Numbers:** Only returned when a user's own Telegram privacy settings expose their phone number to your logged-in account (typically `< 5%` of users). User IDs, `@usernames`, and `access_hash` are always captured.
+4. **Rate Limits &amp; Account Safety:** Automated adding and DM broadcasting carry inherent Telegram rate-limit (`FloodWait` / `PeerFlood`) and account restriction risks. Use aged accounts, residential/mobile proxies, and conservative pacing ([read our anti-ban guide](https://telegramscraper.shop/blog/how-to-avoid-telegram-ban)).
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Fast delivery and clean CSV output. Highly recommended for Telegram research." — **Light | Airaa**
+---
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Reliable across multiple accounts. FloodWait handling works as advertised." — **NAKAMA**
+## 📂 Sample Output Schema (`members.csv`, `.txt`, `.json`)
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Runs cleanly on VPS and Android Termux. Great value at $80." — **Ivan**
+All scrapers (`Option 02`, `Option 03`, and `Option 08`) merge and deduplicate leads by User ID into `members.csv` without overwriting previous runs:
 
-> ⭐⭐⭐⭐⭐ &nbsp; "One-time price, lifetime value. Solid purchase with no recurring fees." — **Inereal**
+```csv
+Name,ID,Username,Phone Number,Access Hash,Group Name,Group ID
+Alex Rivera,1000482910,alex_rivera_dev,,8492019384756102938,Crypto Traders Hub,-1001928374650
+Sofia Lindqvist,1000593821,sofia_quant,,7381920495867213049,Crypto Traders Hub,-1001928374650
+Marco Rossi,1000674932,mrossi_fx,,6270819384756102938,FX Signals (comments),-1001837465921
+Elena Voronova,1000785043,,,5169708273645091827,FX Signals (discussion),-1001837465921
+```
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Saved hours of manual work. Great value, easy to integrate with existing CRM workflows." — **Jastin**
+- **[Download the 20-Row Synthetic Sample CSV (`sample_members.csv`)](https://telegramscraper.shop/assets/sample_members.csv)** to test with your CRM, spreadsheet, or pipeline before buying.
+- Need `@username`-only lists or JSON? Use `Option 02 -> 04 (Export & Filter Scraped Members)` to generate `members_usernames.txt`, `members_export.json`, or `members_with_username.csv` ([learn more about CSV/Excel exports](https://telegramscraper.shop/export-to-csv)).
 
-> ⭐⭐⭐⭐⭐ &nbsp; "AES session encryption and local-only operation made the security review easy. Clean product." — **Anton**
+---
 
-> ⭐⭐⭐⭐⭐ &nbsp; "Support was responsive and the tool delivered as promised. Five stars." — **Pittow**
+## 🛡️ Verified Purchase Proofs &amp; Live Demo Before You Pay
+
+We do not publish inflated buyer counters or unverified testimonials. Instead, you can verify the toolkit in two ways before spending a dollar:
+
+1. **Request a Free Live Demo on Your Target Group:** Message **[@AkibHridoy on Telegram](https://t.me/AkibHridoy)** with a link to the Telegram group or channel you want to test. We will run a live screen-share or send you a 20-row sample scrape from your own target group so you can see the exact output first.
+2. **Inspect Redacted Purchase Proofs &amp; Delivery Records:** View real, privacy-redacted buyer invoices, delivery confirmations, and git update history on our **[Verified Purchase Evidence page](https://telegramscraper.shop/purchase-evidence)** and **[Changelog](https://telegramscraper.shop/changelog)**.
 
 <div align="center">
 
-**[See more reviews and proof screenshots → telegramscraper.shop](https://telegramscraper.shop/)**
+**[View Verified Purchase Proofs → telegramscraper.shop/purchase-evidence](https://telegramscraper.shop/purchase-evidence)**
 
 </div>
 
@@ -113,114 +146,103 @@ Rated **4.8 / 5** across **640+ buyers**. Here's what people say after putting T
 
 ## <img src="assets/icons/buy.svg" width="24" height="24" alt="" /> How to Buy
 
-Getting the full tool takes about two minutes:
+Getting the complete v1.8 toolkit takes about two minutes:
 
-1. **Open the store** — visit **[telegramscraper.shop](https://telegramscraper.shop/)**, or message **[@AkibHridoy on Telegram](https://t.me/AkibHridoy)** directly.
-2. **Confirm your order** — the price is **$80 USD, one-time**. It includes the complete Python source code, lifetime access, and all future updates.
-3. **Arrange payment** — payment is handled directly in the Telegram chat. Just say hello and you'll be guided through it.
-4. **Receive everything** — you get the full source code plus setup help so you're up and running fast.
-
-> **One-time payment. No subscription, no recurring fees** — pay once, own it for life.
+1. **Visit the store or message us on Telegram** — open **[telegramscraper.shop/pricing](https://telegramscraper.shop/pricing)** or message **[@AkibHridoy on Telegram](https://t.me/AkibHridoy)** directly.
+2. **Optional live test** — send us your target group or channel link if you want us to verify scrapeability first.
+3. **One-time payment ($80 USD)** — includes the complete Python source code for all modules, lifetime access, all future updates, and 1-on-1 setup assistance.
+4. **Instant delivery** — receive the full repository/ZIP package and run `setup.bat` (Windows) or `bash setup.sh` (macOS/Linux/Termux) to launch in minutes.
 
 <div align="center">
 
-[![Buy Now](https://img.shields.io/badge/Buy%20Now-%2480%20USD-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/)
+[![Buy Now — $80 USD](https://img.shields.io/badge/Buy%20Now-%2480%20USD-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/pricing)
 &nbsp;
-[![Buy on Telegram](https://img.shields.io/badge/Buy%20on%20Telegram-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
+[![Message @AkibHridoy on Telegram](https://img.shields.io/badge/Buy%20on%20Telegram-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
 
 </div>
 
 ---
 
-## <img src="assets/icons/demo.svg" width="24" height="24" alt="" /> See It in Action
+## 📚 Telegram Scraping Guides &amp; Technical Tutorials
 
-Want to see the tool before you buy? Live screenshots and a full walkthrough are on the website:
+New to MTProto scraping or troubleshooting a specific Telegram error? Read our free engineering guides on **[telegramscraper.shop/blog](https://telegramscraper.shop/blog/)**:
 
-**[View screenshots and live demo at telegramscraper.shop](https://telegramscraper.shop/)**
-
-<!-- Embed screenshots here, e.g. <img src="assets/screenshots/main.png" width="80%" /> -->
+- **[How to Scrape Telegram Group Members in 2026 (Complete Guide)](https://telegramscraper.shop/blog/how-to-scrape-telegram-members)** — Visible rosters vs. message-history extraction explained step by step.
+- **[How to Scrape Hidden Telegram Group Members](https://telegramscraper.shop/blog/telegram-hidden-members)** — Recovering active members when admins hide the participant list.
+- **[Why Telegram Global Search Shows So Few Groups (And How Multi-Account Search Fixes It)](https://telegramscraper.shop/blog/why-telegram-search-shows-few-groups)** — How Telegram ranks global search by account region/history and how Option 08 expands coverage.
+- **[How to Fix `CHAT_ADMIN_REQUIRED` When Scraping Telegram Channels &amp; Groups](https://telegramscraper.shop/blog/telegram-chat-admin-required-error-fix)** — Why direct channel subscriber dumps fail and how linked discussion + comment scraping works.
+- **[How to Get Your Telegram `API_ID` and `API_HASH`](https://telegramscraper.shop/blog/how-to-get-telegram-api-id-hash)** — Step-by-step walkthrough for `my.telegram.org/apps`.
+- **[Running a Telegram Scraper on Android with Termux](https://telegramscraper.shop/blog/telegram-scraper-termux-android)** — Full mobile setup guide for Android devices without root.
+- **[How to Avoid Telegram Bans, `FloodWait`, and `PeerFlood` Errors](https://telegramscraper.shop/blog/how-to-avoid-telegram-ban)** — Account warm-up, residential/mobile proxies, and safe pacing intervals.
+- **[Best Telegram Scrapers in 2026 — Honest Comparison](https://telegramscraper.shop/blog/best-telegram-scraper-2026)** — Comparing Python MTProto tools, browser extensions, and cloud platforms.
+- **[MTProto User API vs. Telegram Bot API for Scraping](https://telegramscraper.shop/blog/telegram-scraper-vs-bot-api)** &amp; **[Telethon vs. Pyrogram](https://telegramscraper.shop/blog/telethon-vs-pyrogram)** — Architectural breakdown for Python developers.
 
 ---
 
-## <img src="assets/icons/docs.svg" width="24" height="24" alt="" /> Documentation
+## <img src="assets/icons/docs.svg" width="24" height="24" alt="" /> Full Documentation (v1.8)
 
-A full overview of what the tool does and how to use it. Expand any section below.
+Expand any section below to inspect the full CLI menu structure, installation steps, and module workflows.
 
 <details>
-<summary><b>Prerequisites &amp; Installation</b></summary>
+<summary><b>Prerequisites &amp; One-Command Installation</b></summary>
 
 ### Prerequisites
 
 - **Python 3.8+**
 - **Git** (required to install the Pyrogram fork)
-- **Telegram API Credentials** (API_ID and API_HASH)
+- **Telegram API Credentials** (`API_ID` and `API_HASH` from [my.telegram.org/apps](https://my.telegram.org/apps))
 
-### Installation
+### Quick Automated Setup (Recommended)
 
-#### 1. Get the project
+After extracting your archive or cloning your private repository, run the included setup launcher for your OS. It verifies Python, installs `requirements.txt`, compiles/checks `TgCrypto`, creates `.env` from `.env.example` (prompting for `API_ID` and `API_HASH`), runs `check_setup.py`, and starts `main.py`:
 
-After purchase you'll receive the full source. If you have repo access:
+- **Windows:**
+  ```bat
+  setup.bat
+  ```
+- **macOS / Linux / Termux (Android):**
+  ```bash
+  bash setup.sh
+  ```
+
+You can also run the standalone environment healthcheck at any time:
 ```bash
-git clone <repository-url>
-cd TelegramScraper
+python check_setup.py
 ```
+*(Or from inside the app via **Option 09 — Settings → 07 Test My Setup**.)*
 
-If you received a ZIP, extract it to a folder and open a terminal there.
+### Manual Step-by-Step Setup
 
-#### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-> **Note:** TgCrypto is mandatory. Without it, Pyrogram falls back to a pure-Python AES implementation that is extremely slow and will lock up scraping tasks. The app will refuse to start if TgCrypto is not installed.
-
-> **Note:** `PySocks` is included in `requirements.txt` and is required to route accounts through a proxy (see **Option 06 — Proxy Manager**). Without it, proxies are ignored and the app connects directly.
-
-If TgCrypto fails to install, make sure you have a C compiler available:
-- **Windows:** Install [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-- **Linux/Termux:** `sudo apt install build-essential` (or `pkg install build-essential` on Termux)
-- **macOS:** `xcode-select --install`
-
-#### 3. Get Telegram API credentials
-
-1. Visit [https://my.telegram.org/apps](https://my.telegram.org/apps)
-2. Log in with your Telegram phone number
-3. Click **"Create New Application"**
-4. Fill in the app name (e.g., "MyApp") and any other required fields
-5. Copy your **API_ID** (a number) and **API_HASH** (a string)
-
-#### 4. Create the `.env` file
-
-Create a file named `.env` in the project root:
-
-```env
-API_ID=12345678
-API_HASH=your_api_hash_here
-```
-
-Replace the values with your actual credentials from step 3.
-
-#### 5. Run
-
-```bash
-python main.py
-```
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(Optional: run `pip install -r requirements-ai.txt` if you want to enable Gemini / Vertex AI in Option 08.)*
+2. **Create `.env` in the project root:**
+   ```env
+   API_ID=12345678
+   API_HASH=your_api_hash_here
+   ```
+3. **Verify &amp; launch:**
+   ```bash
+   python check_setup.py
+   python main.py
+   ```
 
 </details>
 
 <details>
-<summary><b>Quick Start</b></summary>
+<summary><b>Quick Start &amp; Main Menu (v1.8)</b></summary>
 
-When you launch the tool, you'll see the main menu:
+When you launch the tool, you'll see the v1.8 main menu:
 
 ```
-TelegramScraper v1.7
+TelegramScraper v1.8
 ℹ 0 sessions loaded (check Manage Sessions for status)
 
-┌─────────────────────┐
-│      Main Menu      │
-├─────────────────────┤
+┌────────────────────────────┐
+│         Main Menu          │
+├────────────────────────────┤
 │  01  Login Telegram Account
 │  02  Members Scraper
 │  03  Channel Scraper
@@ -228,335 +250,88 @@ TelegramScraper v1.7
 │  05  Message Broadcast
 │  06  Proxy Manager
 │  07  Manage Sessions
+│  08  AI Lead Finder
+│  09  Settings
 │
 │  99  About
 │  00  Exit
-└─────────────────────┘
+└────────────────────────────┘
 › Choose an option:
 ```
 
-**Typical workflow:**
-1. *(Optional but recommended)* Add residential/mobile proxies in **Proxy Manager** (Option 06) before logging in
-2. **Login** one or more Telegram accounts (Option 01) — bind a proxy when prompted
-3. **Scrape** members from a source group (Option 02) or a channel's audience (Option 03)
-4. **Add** scraped members to a target group (Option 04)
-5. **Broadcast** a message to all scraped members (Option 05)
+**Workflow A — You already have target group/channel links:**
+1. *(Optional)* Add residential/mobile proxies in **Proxy Manager** (`Option 06`) before logging in.
+2. **Login** one or more Telegram accounts (`Option 01`) — bind a proxy when prompted.
+3. **Preview &amp; Scrape** members from a group (`Option 02`) or channel (`Option 03`), with optional `@username` / active-user filters.
+4. **Export** to `.csv`, `.txt`, or `.json` (`Option 02 -> 04`), **Add** to your group (`Option 04`), or **Broadcast** a Markdown DM (`Option 05`).
+
+**Workflow B — You want to discover groups in a market/niche:**
+1. **Login** one or more accounts (`Option 01`). More accounts = broader Telegram search coverage.
+2. Open **AI Lead Finder** (`Option 08`) → **Manage Niches** → create a niche (e.g., `copy trading`) with seed keywords.
+3. Run **Preview Searches** (`03`) to see the exact search strings and estimated time before making any network calls.
+4. Run **Discovery + Scrape** (`01`), select the groups you want to keep, and scrape them directly into `members.csv`.
 
 </details>
 
 <details>
-<summary><b>Usage Guide — all menu options</b></summary>
+<summary><b>Usage Guide — Options 01 to 09</b></summary>
 
 ### Option 01 — Login Telegram Account
-
-This option lets you authenticate Telegram accounts. Sessions are encrypted and stored locally in the `sessions/` directory.
-
-#### First-Time Encryption Setup
-
-On your first login, you'll be asked to create an encryption password (minimum 4 characters). This password protects all your stored session strings using Fernet encryption with PBKDF2 key derivation (480,000 iterations). On subsequent logins, you'll enter this same password to decrypt existing sessions and encrypt new ones.
-
-> **Important:** If you forget your encryption password, stored sessions cannot be recovered. You'll need to log in again.
-
-#### Sub-Menu
-
-```
-01 - Login with Phone Number
-02 - Login from TData
-03 - Login with QR Code
-00 - Go Back
-```
-
-#### Login with Phone Number
-
-1. Enter your phone number in international format (e.g., `+1234567890`)
-2. Telegram sends an OTP code to your phone/app
-3. Enter the OTP code (spaces are automatically stripped)
-4. If your account has 2FA enabled, enter your 2FA password (input is masked)
-5. Session is encrypted and saved
-
-#### Login with QR Code
-
-1. A QR code is displayed in your terminal
-2. Open Telegram on your phone → Settings → Devices → Scan QR Code
-3. The tool automatically detects the scan (polls every 5 seconds)
-4. If 2FA is enabled, enter your password
-5. Session is encrypted and saved
-
-#### Login from TData
-
-1. Provide the path to your Telegram Desktop `tdata` folder
-   - **Windows:** `%APPDATA%\Telegram Desktop\tdata`
-   - **Linux:** `~/.local/share/TelegramDesktop/tdata`
-   - **macOS:** `~/Library/Application Support/Telegram Desktop/tdata`
-2. The tool extracts the auth key and converts it to a Pyrogram session
-3. Connectivity is verified by calling `get_me()`
-4. Session is encrypted and saved
-
----
+Authenticate accounts via **Phone Number (OTP + 2FA)**, **Telegram Desktop TData import**, or **QR Code scan**. All sessions are encrypted locally in `sessions/` using Fernet (AES-128-CBC + HMAC-SHA256) with a PBKDF2-derived key (`480,000` iterations). New logins automatically receive a sticky mobile device fingerprint.
 
 ### Option 02 — Members Scraper
-
-Scrape members from a Telegram group and save them to `members.csv`.
-
-#### Sub-Menu
-
 ```
 01 - Scrape Non-Hidden Members (from Group's Members List)
 02 - Scrape Hidden Members (from Group's Messages/Mentions)
+03 - Dry-Run / Preview Target Group (Check roster visibility & sample 5 members)
+04 - Export & Filter Scraped Members (Save as .txt @usernames, .json, or filtered .csv)
 00 - Go Back
 ```
-
-#### Scrape Hidden Members
-
-Scrapes members from **message history, mentions, and join events** — useful when the members list is restricted.
-
-1. Enter the group link or username
-2. The tool iterates through all messages in the group, extracting users from:
-   - Message authors
-   - `@username` mentions
-   - Text mentions (clickable names that link to profiles)
-   - "X joined the group" service messages (catches hidden members who joined but never posted)
-3. A checkpoint is saved every 50 unique members to `scrape_checkpoint.json`
-4. If interrupted (Ctrl+C), progress is saved — next time you scrape the same group, you'll be asked to **resume from the checkpoint**
-5. Results saved to `members.csv`
-
-**Best for:** Private groups with hidden member lists, or when you want to capture active participants.
-
-#### Scrape Non-Hidden Members
-
-Scrapes from the group's **official members list** (visible when you tap "Members" in group info).
-
-1. Enter the group link or username (e.g., `https://t.me/mygroup`, `@mygroup`, or `mygroup`)
-2. The tool selects an available account (skips accounts on cooldown)
-3. Iterates through the members list, filtering out bots and deduplicating by user ID
-4. A spinner shows real-time progress: member count, group name, and which account is being used
-5. Results saved to `members.csv`
-
-**Best for:** Public groups or groups where the members list is visible.
-
-#### Output Format (`members.csv`)
-
-```csv
-Name,ID,Username,Phone Number,Access Hash,Group Name,Group ID
-John Doe,123456789,johndoe,,1234567890123456,MyGroup,-100987654321
-Jane,987654321,,,9876543210987654,MyGroup,-100987654321
-```
-
-> The same `members.csv` is shared by the Channel Scraper, Members Adder, and Message Broadcast.
-
----
+- Supports on-the-fly filtering (**only users with `@username`** and/or **exclude `long_time_ago` inactive users**).
+- Checkpoints progress every 50 members to `scrape_checkpoint.json` for instant Ctrl+C resume.
+- Writes post-run stats to `logs/last_run_summary.txt`.
 
 ### Option 03 — Channel Scraper
-
-Extract a broadcast **channel's** audience and save it to `members.csv`.
-
-#### Why a channel can't be scraped directly
-
-Telegram enforces, server-side, that only **admins** can list a broadcast channel's subscribers — any non-admin call to fetch the participant list returns `CHAT_ADMIN_REQUIRED`. No library, fork, or "letter-by-letter search" trick bypasses this. So instead of the (impossible) direct dump, this option harvests the channel's audience through two public **side-channels** via its linked discussion group:
-
-- **Vector A — Discussion members:** the channel's linked discussion supergroup. The tool auto-joins it and scrapes the visible member roster. **If the roster is hidden by admins, it automatically falls back to the "hidden members" technique** — scanning the discussion group's message history for authors, joiners, and mentioned users (the same engine as Option 02's hidden scraper).
-- **Vector B — Comment authors:** it walks **all** of the channel's posts and collects the user IDs/usernames of everyone who commented.
-
-#### How It Works
-
-1. Enter the channel link or username (e.g. `https://t.me/durov`, `@durov`, or `durov`)
-2. Choose whether to use **Takeout mode** (insulates bulk reads from interactive flood limits; may add a short startup delay)
-3. Vector A runs first (roster, or the hidden-history fallback), then Vector B scans **every** post for commenters; results are merged and de-duplicated by user ID. Because it scans all posts, a large channel can take a while — requests are paced and progress is checkpointed
-4. A checkpoint is saved periodically to `scrape_channel_checkpoint.json` — if interrupted (Ctrl+C), progress is saved and you'll be offered to **resume** next time
-5. Results are saved to `members.csv`, with the source tagged in the Group Name column (`<Channel> (discussion)` or `<Channel> (comments)`)
-
-> If you point this at a normal group/supergroup it will tell you to use the **Members Scraper** instead.
-
-**Best for:** building an audience list from a channel you are *not* an admin of.
-
----
+- **Optional Dry-Run Preview:** Checks channel subscriber count, linked discussion group, and discussion roster visibility before starting.
+- **Phase 1 (Comment Authors):** Scans channel posts and extracts commenters.
+- **Phase 2 (Discussion Members):** Joins the linked discussion supergroup and merges both the visible member roster and message-history scan.
+- **Ctrl+C Phase Skip &amp; Checkpointing:** Pressing Ctrl+C skips the current phase or saves progress to `scrape_channel_checkpoint.json`.
 
 ### Option 04 — Members Adder
-
-Add scraped members from `members.csv` to a target group.
-
-#### Sub-Menu
-
 ```
 01 - Rush Adder (Remove user from 'members.csv' after adding)
 02 - Calm Adder (Keep user in 'members.csv' after adding)
+03 - Dry-Run / Preview Adder (Check target group permissions & estimate time)
 00 - Go Back
 ```
-
-#### Rush Adder vs Calm Adder
-
-| | Rush Adder | Calm Adder |
-|---|---|---|
-| **After adding a member** | Removes them from `members.csv` | Keeps `members.csv` unchanged |
-| **Best for** | Production runs — tracks progress, no duplicate adds on restart | Testing or intentional re-adds |
-
-#### How Adding Works
-
-1. Enter the target group link or username
-2. A progress bar appears showing: percentage, added count, skipped count, elapsed time, and ETA
-3. For each member in `members.csv`:
-   - Attempts to add them to the group
-   - On success: waits a **random 3–8 seconds** before the next add (jitter to avoid detection)
-   - If already a member: skips (no delay)
-   - If privacy-restricted, kicked, or invalid: skips with reason logged
-4. Completion summary shows total processed, added, skipped, and remaining
-
-#### FloodWait Handling
-
-- **Small FloodWait (< 1 hour):** Waits in place with added jitter, then retries with the same account
-- **Large FloodWait (>= 1 hour):** Puts the account on cooldown and **switches to the next available account**
-- **PeerFlood (spam flag):** Automatically tries a workaround (add as contact → add to group → remove contact)
-
-#### Account Rotation
-
-If you have multiple accounts logged in, the adder cycles through them automatically. When one account hits a large FloodWait, it moves to the next. Cooldown times are persisted in `account_cooldowns.json` so they survive restarts.
-
----
+- **Dry-Run Adder Preview (`03`):** Verifies target group invite permissions (`can_invite_users`), active accounts, and estimated run time without sending invites.
+- **Post-Run Breakdown:** Summarizes added count, skip reasons (`privacy/limits`, `already in group`, `invalid`), accounts used, and `FloodWait` hits in the terminal and `logs/last_run_summary.txt`.
 
 ### Option 05 — Message Broadcast
+- Converts Markdown (`message_template.md`) to Telegram HTML (`<b>`, `<i>`, `<s>`, `<code>`, `<pre>`, `<a href>`).
+- Includes **`[d]ry-run preview`** to check active accounts, recipient counts, and estimated duration before sending DMs.
+- Removes messaged users from `members.csv` on success so interrupted broadcasts can resume cleanly.
 
-Send a formatted direct message to all scraped members in `members.csv`.
+### Option 06 — Proxy Manager &amp; Option 07 — Manage Sessions
+- Add, list, test, and stickily bind SOCKS5/SOCKS4/HTTP proxies to accounts (`Option 06`).
+- List masked phone numbers, test live connectivity (`get_me()`), and remove deactivated sessions (`Option 07`).
 
-#### How It Works
-
-1. On first use, a sample template file (`message_template.md`) is created in the project root — you can edit it or use your own `.md` file
-2. A **syntax guide** is displayed showing supported Markdown formatting and how it renders on Telegram
-3. Enter the path to your `.md` message file
-4. The message is converted to Telegram-compatible HTML and a **preview** is shown for confirmation
-5. After confirming, messages are sent one-by-one to each user in `members.csv`
-6. Each successfully messaged user is **removed from `members.csv`** (allows resuming on restart)
-
-#### Supported Markdown Syntax
-
-| Markdown | Telegram Result |
-|---|---|
-| `**bold**` | **bold** |
-| `*italic*` | *italic* |
-| `~~strikethrough~~` | ~~strikethrough~~ |
-| `[link text](url)` | Clickable link |
-| `` `inline code` `` | `monospace` |
-| ```` ```code block``` ```` | Code block |
-| `# Header` | **Bold header line** |
-| `- list item` | Bullet point |
-
-> **Note:** The maximum message length is 4096 characters (after HTML conversion). Messages exceeding this limit will be rejected before sending.
-
-#### Delay &amp; Rate Limiting
-
-- **30–60 seconds** random delay between each message (mimics human behavior)
-- **Small FloodWait (< 1 hour):** Waits with jitter, then retries
-- **Large FloodWait (>= 1 hour):** Switches to the next available account
-- Account cooldowns are persisted in `account_cooldowns.json`
-
-#### Error Handling
-
-| Scenario | Action |
-|---|---|
-| User blocked the account | Skipped, removed from CSV |
-| User account deactivated | Skipped, removed from CSV |
-| User not found (invalid ID/username) | Skipped, removed from CSV |
-| User has privacy restrictions | Skipped, **kept in CSV** (may change later) |
-| Sending account deactivated/banned | Marked inactive, switches to next account |
-| Ctrl+C interrupted | Stops gracefully, CSV reflects partial progress |
-
----
-
-### Option 06 — Proxy Manager
-
-Maintain a pool of proxies and bind them to accounts. Proxies are **optional** — an account with no bound proxy connects directly.
-
-#### Sub-Menu
-
-```
-01 - Add Proxy
-02 - List Proxies
-03 - Test All Proxies
-04 - Assign Proxy to Account
-05 - Unassign Account Proxy
-06 - Remove Proxy
-00 - Go Back
-```
-
-#### IP reputation matters
-
-Telegram scores the outbound IP/ASN of every session:
-
-| IP type | Trust | Notes |
-|---|---|---|
-| **Datacenter** (AWS, DigitalOcean, Hetzner) | ❌ Flagged | Heavily restricted; fast bans |
-| **Residential** (home ISP) | ✅ Good | Reliable for scraping |
-| **Mobile** (4G/5G carrier) | ⭐ Best | Highest trust, most resilient |
-
-#### Sticky binding
-
-A proxy is bound to an account for its **entire lifecycle** — the tool never rotates a session's IP mid-flight (that looks like session hijacking and gets the account terminated). For best results, **bind a proxy at login**; assigning one to an already-established session is possible but changes its IP mid-life and carries some risk (the tool warns you).
-
-- **Add Proxy:** enter scheme (`socks5`/`socks4`/`http`), host, port, optional username/password, and a type label. Credentials are encrypted at rest with your session password.
-- **Test All Proxies:** opens an MTProto connection through each proxy and reports reachability + latency.
-- **Assign / Unassign:** bind or unbind a pool proxy to a logged-in account.
-
----
-
-### Option 07 — Manage Sessions
-
-View, test, and clean up your stored Telegram sessions.
-
-#### Sub-Menu
-
-```
-01 - List All Sessions
-02 - Test All Sessions
-03 - Remove Inactive Sessions
-00 - Go Back
-```
-
-#### List All Sessions
-
-Displays a table of all stored sessions:
-
-```
-┌───┬─────────────────┬──────────┬───────────┐
-│ # │ Phone           │ Status   │ Encrypted │
-├───┼─────────────────┼──────────┼───────────┤
-│ 1 │ +1234***890     │ Active   │ Yes       │
-│ 2 │ +9876***321     │ Cooldown │ Yes       │
-└───┴─────────────────┴──────────┴───────────┘
-```
-
-- Phone numbers are masked for security
-- Status shows Active, Cooldown (with remaining time), or error reason
-- Encrypted column shows whether the session string is Fernet-encrypted
-
-#### Test All Sessions
-
-Connects each session to Telegram and verifies it's still valid:
-
-1. Enter your encryption password (to decrypt sessions)
-2. Each session is tested by calling `get_me()`
-3. Results shown in a table: OK (with user ID) or FAILED (with error reason)
-
-#### Remove Inactive Sessions
-
-Finds sessions with a non-Active status (banned, deactivated, auth key invalid, etc.) and offers to delete them:
-
-1. Shows a table of inactive sessions with their status
-2. Asks for confirmation: `Remove all inactive sessions? (y/n)`
-3. On confirm: deletes the session CSV files from disk
-
----
-
-### Option 99 — About
-
-Displays tool information: name, version, developer, and contact details.
+### Option 08 — AI Lead Finder &amp; Option 09 — Settings
+- **Option 08 Sub-Menu:** `01 Run Discovery + Scrape`, `02 Manage Niches`, `03 Preview Searches`, `04 Keyword Report`, `05 Discovered Groups`.
+- **Option 09 Sub-Menu:** `01 Volume Preset (Conservative/Moderate/Aggressive)`, `02 Scrape Mode`, `03 Automation Mode`, `04 Discovery Modes`, `05 Advanced Limits`, `06 AI Status`, `07 Test My Setup`, `08 Reset to Defaults`.
 
 </details>
 
 <details>
-<summary><b>Project Structure</b></summary>
+<summary><b>Project Structure (v1.8)</b></summary>
 
 ```
 TelegramScraper/
 ├── main.py                  # Entry point, main menu loop
+├── setup.bat                # Automated setup & launcher script (Windows)
+├── setup.sh                 # Automated setup & launcher script (macOS/Linux/Termux)
+├── check_setup.py           # Environment & credential healthcheck (CLI + menu)
+├── run_summary.py           # Post-run summary renderer & logs/last_run_summary.txt writer
 ├── configs.py               # Config class, loads .env variables + tunable constants
 ├── crypto.py                # Fernet encryption/decryption for sessions & secrets
 ├── account_manager.py       # Multi-account rotation & cooldown tracking
@@ -567,155 +342,70 @@ TelegramScraper/
 ├── retry.py                 # @async_retry decorator with exponential backoff
 ├── logger.py                # Rotating file logger setup
 ├── utils.py                 # CSV I/O, input helpers, phone validation
+├── settings_store.py        # User-editable settings (settings.json)
 ├── requirements.txt         # Pinned dependencies
-├── .env                     # Your API credentials (not in repo)
+├── requirements-ai.txt      # Optional Vertex AI dependency (Option 08 only)
+├── .env.example             # Template for .env configuration
 ├── LICENSE                  # License & Terms of Service
 │
-├── funcs/
-│   ├── ui.py                # Rich console styling, prompts, spinners
-│   ├── helpers.py           # Session loading, member saving helpers
-│   └── options_handlers/
-│       ├── login.py         # Phone, QR, TData login flows (+ device/proxy at login)
-│       ├── scrape_members.py# Non-hidden & hidden group member scraping
-│       ├── scrape_channel.py# Channel audience scraping (discussion roster + comments)
-│       ├── add_members.py   # Rush & calm member adding
-│       ├── broadcast_message.py # Message broadcast to scraped members
-│       ├── proxy_manager.py # Add/test/assign proxies
-│       ├── manage_sessions.py # List, test, cleanup sessions
-│       └── about.py         # About screen
+├── leadfinder/              # AI Lead Finder engine
+│   ├── keyword_variants.py  # Concepts -> search spellings (pure, no AI)
+│   ├── ai_provider.py       # Vertex AI (Gemini): optional AI integration
+│   ├── niche_store.py       # The niche library (niches.json)
+│   ├── term_store.py        # Search-term yield + retirement (search_terms.json)
+│   ├── group_store.py       # Every group seen, incl. dead ends + skip memory
+│   └── discovery.py         # The four-mode discovery orchestrator
 │
-├── sessions/                # Encrypted session CSVs (not in repo)
-├── logs/                    # Rotating log files (not in repo)
-├── members.csv              # Scraped member data (not in repo)
-├── proxies.csv              # Proxy pool, credentials encrypted (not in repo)
-├── account_metadata.json    # Per-account device + proxy binding (not in repo)
-├── scrape_checkpoint.json   # Group-scrape resume checkpoint (not in repo)
-└── scrape_channel_checkpoint.json  # Channel-scrape resume checkpoint (not in repo)
+└── funcs/
+    ├── ui.py                # Rich console styling, prompts, plain-English error tips
+    ├── helpers.py           # Session loading, filters, CSV/TXT/JSON export helpers
+    └── options_handlers/
+        ├── login.py         # Phone, QR, TData login flows (+ device/proxy at login)
+        ├── scrape_members.py# Visible, hidden, dry-run & export group member workflows
+        ├── scrape_channel.py# Channel audience scraping (comments + discussion)
+        ├── add_members.py   # Rush, calm & dry-run member adding
+        ├── broadcast_message.py # Markdown DM broadcast + dry-run preview
+        ├── proxy_manager.py # Add/test/assign proxies
+        ├── manage_sessions.py # List, test, cleanup sessions
+        ├── ai_lead_finder.py# Niche -> discovery -> scrape (Option 08)
+        ├── settings_menu.py # Settings & Test My Setup screens (Option 09)
+        └── about.py         # About screen
 ```
-
-</details>
-
-<details>
-<summary><b>Security</b></summary>
-
-- **Session Encryption:** All Telegram session strings are encrypted using Fernet (AES-128-CBC + HMAC-SHA256). The encryption key is derived from your password using PBKDF2 with 480,000 iterations and a random 16-byte salt.
-- **Local Storage Only:** All data (sessions, member lists, logs) is stored locally on your machine. The tool does not send data to any external server.
-- **Phone Masking:** Phone numbers are always displayed masked in the UI and logs (e.g., `+1234***890`).
-- **Credential Safety:** API credentials are loaded from `.env` which is excluded from version control via `.gitignore`.
-- **No Session Logging:** Session strings are never written to log files.
-
-</details>
-
-<details>
-<summary><b>Anti-Detection &amp; Safety</b></summary>
-
-Telegram evaluates account "health" across three axes: the client/device signature, the network (IP/ASN) reputation, and request pacing. This tool addresses all three, but no tool can make abusive volume safe — pacing and account hygiene still matter most.
-
-### Device/client spoofing (new logins)
-
-Every account logged in through this version is assigned a realistic, **sticky** mobile device fingerprint (e.g. *Samsung Galaxy S24 Ultra / Android 14* or *iPhone 15 Pro Max / iOS 17.5.1*) instead of the default `CPython / Windows / Pyrogram` signature, and keeps it for the session's lifetime. The fingerprint is shown at login and stored in `account_metadata.json`. Existing sessions are left untouched (changing an established session's device fingerprint is itself suspicious).
-
-### Proxies (network reputation)
-
-Use **Option 06 — Proxy Manager** to bind residential or mobile proxies to your accounts. Datacenter IPs (AWS/DigitalOcean/Hetzner) are heavily flagged. Bindings are **sticky** — one IP per session, never rotated mid-session. Proxies are optional; without one, the account connects directly from your machine's IP.
-
-### Rate limiting &amp; pacing
-
-- **Jitter:** scrapers space out paced requests with a randomized human-like delay (≈2.5s ± 0.7s) rather than a mechanical fixed interval.
-- **FloodWait policy (centralized):** a small wait is absorbed in place; a large one (≥1 hour) puts the account on a persistent cooldown and rotates to the next available account.
-- **Adder/Broadcast delays:** members are added every 3–8s and broadcast DMs sent every 30–60s by default (tunable in `configs.py`).
-- **Takeout mode (optional):** the Channel Scraper can route bulk reads through Telegram's Takeout API to insulate them from interactive flood limits.
-
-### Account hygiene (manual, but important)
-
-- Avoid brand-new accounts (registered within ~30 days) for heavy scraping — they're flagged fastest.
-- "Warm up" a fresh account first: join a few public groups, send a few normal messages, use it like a human for a while before automating.
-- Spread work across multiple accounts and keep volumes modest.
-
-> **Legal/ToS:** Automated scraping and bulk adding/messaging can violate Telegram's Terms of Service and local laws. You are responsible for using this tool lawfully and with the consent required in your jurisdiction. Use it only against communities you are authorized to process.
-
-</details>
-
-<details>
-<summary><b>Troubleshooting</b></summary>
-
-### TgCrypto won't install
-
-TgCrypto is a C extension that requires a compiler:
-- **Windows:** Install [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), then retry `pip install TgCrypto`
-- **Linux:** Run `sudo apt install build-essential python3-dev`, then retry
-- **Termux:** Run `pkg install build-essential`, then retry
-- **macOS:** Run `xcode-select --install`, then retry
-
-### "API_ID and API_HASH must be set"
-
-You're missing the `.env` file or it has incorrect values:
-1. Create a `.env` file in the project root
-2. Add your credentials: `API_ID=12345678` and `API_HASH=your_hash`
-3. Make sure there are no spaces around the `=` sign
-
-### FloodWait / PeerFlood errors
-
-These are Telegram rate limits, not bugs:
-- **FloodWait:** Telegram is asking you to slow down. The tool handles this automatically — small waits are waited out, large waits trigger account switching.
-- **PeerFlood:** Your account has been flagged for adding too many users. Switch to a different account or wait a few hours/days.
-
-### Session decryption failure
-
-If you see decryption errors when testing sessions:
-- Make sure you're entering the correct encryption password
-- If you've forgotten your password, delete the affected session files from `sessions/` and log in again
-
-### Scraping returns fewer members than expected
-
-- **Non-hidden scraping** only works if the group's members list is visible. Some groups restrict this.
-- **Hidden scraping** extracts members from messages, mentions, and join service messages. Silent members are still caught via their "joined the group" message, but only as far back as the group's history goes (older joins whose service messages have aged out won't be found).
-- Bots are automatically filtered out from results.
 
 </details>
 
 ---
 
-## <img src="assets/icons/faq.svg" width="24" height="24" alt="" /> FAQ
+## <img src="assets/icons/faq.svg" width="24" height="24" alt="" /> Frequently Asked Questions
 
-**What exactly do I get for $80?**
-The complete Python source code (fully editable), lifetime access, every future update for free, and setup support — a one-time payment, not a subscription.
+**What is the price and what is included?**
+**$80 USD one-time** for the complete v1.8 toolkit ([see pricing](https://telegramscraper.shop/pricing)): Group Scraper (visible + hidden), Channel Scraper (comments + linked discussion), Members Adder, Mass DM Broadcaster, AI Lead Finder, Proxy Manager, full editable Python source code, and lifetime free updates. No recurring subscription.
 
-**How do I pay?**
-Message [@AkibHridoy on Telegram](https://t.me/AkibHridoy) (or use [telegramscraper.shop](https://telegramscraper.shop/)) and payment is arranged directly in the chat. You'll be walked through it.
+**Can I see it working before I pay?**
+Yes. Message **[@AkibHridoy on Telegram](https://t.me/AkibHridoy)** with a group or channel link you care about and we will run a live screen-share demo or send a 20-row sample scrape from that target.
 
-**Is it a one-time payment or a subscription?**
-One-time. Pay once and the tool — plus all future updates — is yours for life.
+**Does it really scrape hidden group members?**
+Yes, with an important technical distinction: when a group hides its member list, `Option 02 -> 02` scans the group's message history for message authors, `@mentions`, replies, and `"X joined the group"` service messages. It captures active participants and recent joiners, not 100% of silent accounts whose join message was deleted ([read more](https://telegramscraper.shop/blog/telegram-hidden-members)).
 
-**Do I get updates and support?**
-Yes. Future versions are free, and you get help getting the tool set up on your machine.
+**Can it scrape a broadcast channel's subscribers?**
+Telegram blocks non-admins from fetching a channel's raw subscriber list (`CHAT_ADMIN_REQUIRED`). `Option 03` ([Channel Scraper](https://telegramscraper.shop/channel-scraper)) extracts the channel's active audience via **post comments** and its **linked discussion group** (both visible roster and message history). If a channel has no linked discussion group and comments are off, no non-admin tool can scrape it.
 
-**Can I run multiple instances at the same time?**
-No. Session files and CSV data are shared, so running multiple instances can cause conflicts and data corruption.
+**Will my Telegram accounts get banned?**
+Scraping (reading) is low-risk when paced, and the toolkit includes randomized jitter, `FloodWait` auto-cooldowns, multi-account rotation, sticky mobile device fingerprints, and sticky proxy support. Bulk adding (`Option 04`) and cold DM broadcasting (`Option 05`) are aggressively policed by Telegram — never use your personal main account for adding/DMs; use aged secondary accounts with residential/mobile proxies ([read our safety guide](https://telegramscraper.shop/blog/how-to-avoid-telegram-ban)).
 
-**Is my session safe?**
-Yes. Session strings are encrypted with Fernet using a password-derived key (PBKDF2, 480k iterations). Without your password, the encrypted session is unreadable.
+**What OS and devices does it run on?**
+Any system with Python 3.8+: **Windows 10/11**, **macOS**, **Linux (Ubuntu/Debian VPS)**, and **[Android via Termux](https://telegramscraper.shop/blog/telegram-scraper-termux-android)**.
 
-**What if I forget my encryption password?**
-Stored sessions cannot be recovered. You'll need to delete the `sessions/` directory and log in to your accounts again.
+**What is your refund policy?**
+If the toolkit cannot run on your machine and our support team cannot resolve it within 48 hours, you receive a full refund. See our complete **[Refund Policy](https://telegramscraper.shop/refund-policy)** and **[FAQ](https://telegramscraper.shop/faq)** for full details.
 
-**Why does scraping miss some members?**
-Non-hidden scraping only sees members in the public list. For groups that hide their member list, use the hidden scraping option which extracts members from message history, mentions, and "joined the group" service messages — the last of which captures silent members who never posted, as far back as the group's history reaches.
+---
 
-**Can I scrape a channel's subscribers?**
-Not directly — Telegram only lets admins list a channel's subscribers. The Channel Scraper (Option 03) instead harvests the audience through the channel's linked discussion group (member roster, or a hidden-history fallback) and the authors of comments on its posts, then merges and de-duplicates them.
+## 🌍 Multi-Language Documentation (TR / RU / PT)
 
-**Do I need proxies?**
-No — proxies are optional and an account with none connects directly from your machine's IP. But for heavier use, binding a residential or mobile proxy (Option 06) significantly improves account longevity. Datacenter IPs are heavily flagged by Telegram.
-
-**How many accounts do I need?**
-Minimum 1. However, having multiple accounts helps with FloodWait rotation — when one account gets rate-limited, the tool automatically switches to the next available one.
-
-**Does this work on mobile (Termux)?**
-Yes. The tool runs on any platform with Python 3.8+: Windows, macOS, Linux, and Termux (Android). All dependencies are cross-platform.
-
-**What happens if I interrupt a scrape with Ctrl+C?**
-For hidden member scraping, progress is automatically saved to a checkpoint file. Next time you scrape the same group, you'll be offered to resume. For non-hidden scraping, members collected so far are still saved.
+- 🇹🇷 **Türkçe (`Telegram Üye Çekme ve Grup/Kanal Scraper`):** Gizli grup üyelerini geçmiş mesajlardan çıkarma, kanal yorum/tartışma grubu analizi, çoklu hesap rotasyonu (`FloodWait` koruması), gruba üye ekleme ve toplu DM gönderimi. Detaylar için: **[Türkçe Ana Sayfa](https://telegramscraper.shop/tr/)** · **[Fiyatlandırma ($80 Tek Seferlik)](https://telegramscraper.shop/tr/pricing)** · **[Sıkça Sorulan Sorular](https://telegramscraper.shop/tr/faq)**
+- 🇷🇺 **Русский (`Телеграм Парсер Участников, Скрытых Групп и Каналов`):** Парсинг открытых и скрытых участников Telegram-групп через историю сообщений, сбор аудитории каналов через комментарии и чаты обсуждений, инвайтер и рассылка в ЛС с ротацией аккаунтов и прокси. Подробнее: **[Главная на русском](https://telegramscraper.shop/ru/)** · **[Цены ($80 единоразово)](https://telegramscraper.shop/ru/pricing)** · **[Частые вопросы (FAQ)](https://telegramscraper.shop/ru/faq)**
+- 🇧🇷 **Português (`Extrator de Membros do Telegram e Automação MTProto`):** Extração de membros visíveis e ocultos de grupos, comentários de canais, adição de membros e disparo de mensagens em massa com rotação de contas. Veja mais: **[Página Inicial em Português](https://telegramscraper.shop/pt/)** · **[Preços ($80 Pagamento Único)](https://telegramscraper.shop/pt/pricing)** · **[Perguntas Frequentes](https://telegramscraper.shop/pt/faq)**
 
 ---
 
@@ -723,9 +413,9 @@ For hidden member scraping, progress is automatically saved to a checkpoint file
 
 ### Ready to get started?
 
-[![Buy Now](https://img.shields.io/badge/Buy%20Now-%2480%20USD-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/)
+[![Buy Complete Toolkit — $80 USD](https://img.shields.io/badge/Buy%20Now-%2480%20USD%20(Complete%20Toolkit)-229ED9?style=for-the-badge&logo=telegram&logoColor=white)](https://telegramscraper.shop/pricing)
 &nbsp;
-[![Buy on Telegram](https://img.shields.io/badge/Buy%20on%20Telegram-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
+[![Request Live Demo on Telegram](https://img.shields.io/badge/Live%20Demo%20%26%20Support-%40AkibHridoy-2CA5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AkibHridoy)
 
 </div>
 
@@ -733,16 +423,12 @@ For hidden member scraping, progress is automatically saved to a checkpoint file
 
 ## License &amp; Legal
 
-This software is proprietary and commercially licensed. By using this tool, you agree to the terms outlined in the [LICENSE](LICENSE) file, which includes the License Agreement, Terms of Service, Confidentiality &amp; Anti-Redistribution Policy, and Privacy Policy.
-
-**Unauthorized redistribution of this software is strictly prohibited and will result in legal action.**
+This software is proprietary and commercially licensed. By using this tool, you agree to the terms outlined in our [Terms of Service](https://telegramscraper.shop/terms), [Privacy Policy](https://telegramscraper.shop/privacy), and [Refund Policy](https://telegramscraper.shop/refund-policy). Automated scraping and messaging are subject to Telegram's Terms of Service and applicable local regulations; use only with authorized communities and consented migrations.
 
 ---
 
-## Developer
+## Developer &amp; Contact
 
-**Abir Hasan**
-- GitHub: [github.com/AbirHasan2005](https://github.com/AbirHasan2005)
-- Telegram: [t.me/AbirHasan2005](https://t.me/AbirHasan2005)
-
-> For purchases and support, contact **[@AkibHridoy](https://t.me/AkibHridoy)** or visit **[telegramscraper.shop](https://telegramscraper.shop/)**.
+- **Official Website:** [telegramscraper.shop](https://telegramscraper.shop/)
+- **Sales &amp; Live Demo (Telegram):** [@AkibHridoy](https://t.me/AkibHridoy)
+- **Developer:** Abir Hasan — [github.com/AbirHasan2005](https://github.com/AbirHasan2005) · [@AbirHasan2005](https://t.me/AbirHasan2005)
