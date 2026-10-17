@@ -731,14 +731,6 @@ For hidden member scraping, progress is automatically saved to a checkpoint file
 
 ---
 
-## Sponsored by Swiftproxy
-
-[![Swiftproxy Banner](banner.png)](https://www.swiftproxy.net/?ref=TelegramScraper)
-
-**[Swiftproxy](https://www.swiftproxy.net/?ref=TelegramScraper)** — Premium residential proxies built for Telegram automation and data collection. Supports SOCKS5 and HTTP proxies, static and rotating residential IPs, sticky sessions, global locations, low-latency connections, and API access for proxy management. Ideal for Telegram scraping, account management, and large-scale automation workflows.
-
----
-
 ## License &amp; Legal
 
 This software is proprietary and commercially licensed. By using this tool, you agree to the terms outlined in the [LICENSE](LICENSE) file, which includes the License Agreement, Terms of Service, Confidentiality &amp; Anti-Redistribution Policy, and Privacy Policy.
