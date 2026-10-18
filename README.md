@@ -31,11 +31,12 @@
 
 This is a commercial software toolkit. Your **one-time payment of $80 USD** ([view pricing details](https://telegramscraper.shop/pricing)) includes **every module** – never sold per-module and never billed as a subscription:
 
-- **[Group Member Scraper (`Option 02`)](https://telegramscraper.shop/scraper)** – Visible participant roster scraper + hidden member extractor (message history, `@mentions`, and join events)
+- **[Group Member Scraper (`Option 02`)](https://telegramscraper.shop/scraper)** – Visible participant roster scraper + hidden member extractor (message history, `@mentions`, and join events) + external `.txt`/`.csv` lead list importer
 - **[Channel Audience Scraper (`Option 03`)](https://telegramscraper.shop/channel-scraper)** – Two-phase OSINT scraper for broadcast channels via post comment authors + linked discussion group roster &amp; history
-- **[Members Adder (`Option 04`)](https://telegramscraper.shop/adder)** – Rush &amp; Calm group member adder with `PeerFlood` contact-workaround, human jitter, and automatic multi-account rotation
+- **[Members Adder (`Option 04`)](https://telegramscraper.shop/adder)** – Rush &amp; Calm group member adder with `PeerFlood` contact-workaround, configurable human jitter, and automatic multi-account rotation
 - **[Message Broadcast / Mass DM (`Option 05`)](https://telegramscraper.shop/sender)** – Markdown-to-Telegram HTML DM sender with live preview, dry-run estimator, and auto-resume
 - **[AI Lead Finder &amp; Niche Discovery (`Option 08`)](https://telegramscraper.shop/ai-telegram-scraper)** – Multi-account Telegram keyword search, spelling expansion, similar-channel graph traversal, and optional Gemini/Vertex AI discovery
+- **[Live Monitors (`Option 10`)](https://telegramscraper.shop/lead-generation)** – Real-time **New-Member Join Monitor** and **Live Keyword Listener** that stream newly joined users or buying-intent message senders directly into `members.csv`
 - **Full, Unobfuscated Python Source Code** – Inspect, audit, and customize every `.py` file for your own workflows
 - **Lifetime Free Updates &amp; 1-on-1 Setup Support** – Run on Windows, macOS, Linux VPS, or [Android Termux](https://telegramscraper.shop/blog/telegram-scraper-termux-android)
 
@@ -55,7 +56,7 @@ This is a commercial software toolkit. Your **one-time payment of $80 USD** ([vi
 - **Visible Roster Mode (`01`):** Extracts the public member list of any group or supergroup, filtering out bots and deduplicating by User ID.
 - **Hidden Member Recovery Mode (`02`):** When group admins hide the participant list ([`CHAT_ADMIN_REQUIRED`](https://telegramscraper.shop/blog/telegram-chat-admin-required-error-fix)), the scraper walks message history, `@username` mentions, clickable text mentions, and `"X joined the group"` service messages to recover active participants and recent joiners ([learn how hidden member extraction works](https://telegramscraper.shop/blog/telegram-hidden-members)).
 - **Dry-Run Group Preview (`03`):** Inspect a target group's member count, check whether its roster is visible or hidden, get a mode recommendation, and preview 5 sample members (`@username`, User ID, last-seen status) before running a full scrape.
-- **On-the-Fly Scrape Filters &amp; Multi-Format Export (`04`):** Filter scrapes to keep **only users with a public `@username`** or **exclude inactive (`long_time_ago`) accounts**, and export your data to **[CSV, `@username` `.txt` lists, or structured `.json`](https://telegramscraper.shop/export-to-csv)**.
+- **On-the-Fly Scrape Filters, Multi-Format Export (`04`) &amp; External Import (`05`):** Filter scrapes by activity window (`online`/`recently`/`last_week`, or exclude `long_time_ago`) and `@username` presence, export to **[CSV, `@username` `.txt` lists, or structured `.json`](https://telegramscraper.shop/export-to-csv)**, or import external `.txt`/`.csv` username and ID lists directly into `members.csv`.
 
 ### 2. [Telegram Channel Scraper (Post Comments + Linked Discussion)](https://telegramscraper.shop/channel-scraper)
 - Telegram's servers block non-admins from reading a broadcast channel's direct subscriber list (`CHAT_ADMIN_REQUIRED`). No library or fork can bypass that server-side check.
@@ -70,16 +71,21 @@ This is a commercial software toolkit. Your **one-time payment of $80 USD** ([vi
 - **Smart Gate &amp; Keyword Memory:** Automatically swaps broadcast channels for their linked discussion groups (dropping channels that have none), tracks how many real members each keyword earned, and retires dead search terms after 3 empty runs. Works **with or without AI configured**.
 
 ### 4. [Telegram Member Adder (`Option 04`)](https://telegramscraper.shop/adder) &amp; [Mass DM Broadcaster (`Option 05`)](https://telegramscraper.shop/sender)
-- **Rush &amp; Calm Adder Modes:** Remove processed users from `members.csv` automatically (Rush) for clean resume, or keep `members.csv` intact (Calm). Includes a `PeerFlood` temporary-contact workaround and **Dry-Run Adder Preview (`03`)** to verify target group invite permissions and estimate completion time.
-- **Markdown Message Broadcast:** Write your DM in Markdown (`message_template.md`), preview the converted Telegram HTML in your terminal, run a **Dry-Run Broadcast Preview (`[d]`)** to check active accounts and estimated duration, and send with randomized human delays (`30–60s` default).
+- **Rush &amp; Calm Adder Modes:** Remove processed users from `members.csv` automatically (Rush) for clean resume, or keep `members.csv` intact (Calm). Includes a `PeerFlood` temporary-contact workaround, external `.txt`/`.csv` list import (`04`), and **Dry-Run Adder Preview (`03`)** to verify target group invite permissions and estimate completion time.
+- **Markdown Message Broadcast:** Write your DM in Markdown (`message_template.md`), preview the converted Telegram HTML in your terminal, run a **Dry-Run Broadcast Preview (`[d]`)** to check active accounts and estimated duration, and send with customizable human delays (`30–60s` default, tunable in `Option 09 -> 08`).
 
-### 5. New in v1.8 – Setup Automation, Post-Run Reports &amp; Error Translator
+### 5. [Real-Time Live Monitors (`Option 10`)](https://telegramscraper.shop/lead-generation)
+- **New-Member Join Monitor (`01`):** Watches one or more target groups in real time and captures newly joined users (plus newly active posters when join service notices are hidden) directly into `members.csv`.
+- **Live Keyword Listener (`02`):** Watches target groups for buying-intent keywords (e.g., `looking for, need dev, price, dm me`) and saves matching message authors immediately to `members.csv` tagged with the matched keyword.
+
+### 6. Setup Automation, Account Health Dashboard, Post-Run Reports &amp; Error Translator
 - **One-Command Setup (`setup.bat` &amp; `setup.sh`):** Checks Python `>= 3.8`, installs dependencies and `TgCrypto`, creates `.env` from `.env.example` (prompting for `API_ID` / `API_HASH`), runs `check_setup.py`, and launches `main.py`.
 - **Built-In Healthcheck (`python check_setup.py` / `Option 09 -> 07`):** Verifies Python, `TgCrypto` C-extension, required packages, and `.env` credentials with a clear pass/fail table without logging secrets.
-- **Post-Run Summary Reports (`logs/last_run_summary.txt`):** Every scrape, add, or broadcast run renders a detailed terminal summary (including skip reasons like privacy restrictions vs. already in group, accounts used, and `FloodWait` hits) and saves it to `logs/last_run_summary.txt`.
+- **Account Health &amp; Session Dashboard (`Option 07`):** Shows summary counts (`Total` | `Active Ready` | `Cooling Down` | `Inactive / Restricted`), live `FloodWait` cooldown timers, sticky proxy IDs, mobile device profiles, and a 1-click cooldown timer reset (`04`).
+- **Post-Run Summary Reports (`logs/last_run_summary.txt`):** Every scrape, add, broadcast, or live monitor run renders a detailed terminal summary (including skip reasons, accounts used, and `FloodWait` hits) and saves it to `logs/last_run_summary.txt`.
 - **Plain-English Telegram Error Translator:** Translates cryptographic/RPC exceptions (`CHAT_ADMIN_REQUIRED`, `PEER_FLOOD`, `USER_PRIVACY_RESTRICTED`, `FLOOD_WAIT_X`, `AUTH_KEY_UNREGISTERED`, etc.) into clear **"What happened"** and **"Tip: What to do"** guidance directly in the terminal.
 
-### 6. Anti-Detection, Proxies &amp; Local Security
+### 7. Anti-Detection, Proxies &amp; Local Security
 - **Sticky Mobile Device Spoofing:** Assigns each new login a realistic mobile device profile (*Samsung Galaxy S24 Ultra / Android 14*, *iPhone 15 Pro Max / iOS 17.5.1*) persisted in `account_metadata.json`.
 - **Sticky Proxy Manager (`Option 06`):** Bind SOCKS5, SOCKS4, or HTTP residential/mobile proxies stickily per account so an account never switches IP mid-session.
 - **Fernet AES-128 Session Encryption:** All session strings and proxy credentials are encrypted at rest using PBKDF2-HMAC-SHA256 (`480,000` iterations). Nothing ever leaves your machine.
@@ -96,6 +102,7 @@ Many free scripts and SaaS scrapers rely on the [Telegram Bot API](https://teleg
 | **Scrape Hidden Group Members** | ✅ History + `@mentions` + join events | ❌ Impossible | ❌ Impossible |
 | **Scrape Channel Audience** | ✅ Post comments + linked discussion | ❌ Blocked (`CHAT_ADMIN_REQUIRED`) | ⚠️ Partial or unsupported |
 | **Multi-Account Niche Discovery** | ✅ Built-in (`Option 08` AI Lead Finder) | ❌ No global user search | ❌ Single-session only |
+| **Real-Time Join &amp; Keyword Monitors** | ✅ Built-in (`Option 10` Live Monitors) | ⚠️ Requires bot added to target group | ❌ Not supported |
 | **Auto `FloodWait` Account Rotation** | ✅ Persistent cooldowns + auto-switch | ❌ Single bot token | ❌ Manual intervention |
 | **Sticky Device &amp; Proxy Anti-Detection** | ✅ Per-account mobile fingerprint + proxy | ➖ N/A | ❌ Shared datacenter IPs (high ban risk) |
 | **Data Privacy &amp; Session Storage** | ✅ 100% local, Fernet AES-128 encrypted | ✅ Local | ❌ Credentials uploaded to 3rd-party cloud |
@@ -114,7 +121,7 @@ We believe in transparent engineering rather than "100% magic" marketing claims.
 
 ## 📂 Sample Output Schema (`members.csv`, `.txt`, `.json`)
 
-All scrapers (`Option 02`, `Option 03`, and `Option 08`) merge and deduplicate leads by User ID into `members.csv` without overwriting previous runs:
+All scrapers (`Option 02`, `Option 03`, `Option 08`, and `Option 10`) merge and deduplicate leads by User ID into `members.csv` without overwriting previous runs:
 
 ```csv
 Name,ID,Username,Phone Number,Access Hash,Group Name,Group ID
@@ -240,30 +247,31 @@ When you launch the tool, you'll see the v1.8 main menu:
 TelegramScraper v1.8
 ℹ 0 sessions loaded (check Manage Sessions for status)
 
-┌────────────────────────────┐
-│         Main Menu          │
-├────────────────────────────┤
+┌──────────────────────────────────────────┐
+│                Main Menu                 │
+├──────────────────────────────────────────┤
 │  01  Login Telegram Account
 │  02  Members Scraper
 │  03  Channel Scraper
 │  04  Members Adder
 │  05  Message Broadcast
 │  06  Proxy Manager
-│  07  Manage Sessions
+│  07  Manage Sessions & Account Health
 │  08  AI Lead Finder
 │  09  Settings
+│  10  Live Monitors (Join & Keyword Watch)
 │
 │  99  About
 │  00  Exit
-└────────────────────────────┘
+└──────────────────────────────────────────┘
 › Choose an option:
 ```
 
 **Workflow A – You already have target group/channel links:**
 1. *(Optional)* Add residential/mobile proxies in **Proxy Manager** (`Option 06`) before logging in.
 2. **Login** one or more Telegram accounts (`Option 01`) – bind a proxy when prompted.
-3. **Preview &amp; Scrape** members from a group (`Option 02`) or channel (`Option 03`), with optional `@username` / active-user filters.
-4. **Export** to `.csv`, `.txt`, or `.json` (`Option 02 -> 04`), **Add** to your group (`Option 04`), or **Broadcast** a Markdown DM (`Option 05`).
+3. **Preview &amp; Scrape** members from a group (`Option 02`), channel (`Option 03`), or live monitor (`Option 10`), with optional `@username` / active-user filters.
+4. **Export** to `.csv`, `.txt`, or `.json` (`Option 02 -> 04`), **Import** external lead lists (`Option 02 -> 05`), **Add** to your group (`Option 04`), or **Broadcast** a Markdown DM (`Option 05`).
 
 **Workflow B – You want to discover groups in a market/niche:**
 1. **Login** one or more accounts (`Option 01`). More accounts = broader Telegram search coverage.
@@ -274,7 +282,7 @@ TelegramScraper v1.8
 </details>
 
 <details>
-<summary><b>Usage Guide – Options 01 to 09</b></summary>
+<summary><b>Usage Guide – Options 01 to 10</b></summary>
 
 ### Option 01 – Login Telegram Account
 Authenticate accounts via **Phone Number (OTP + 2FA)**, **Telegram Desktop TData import**, or **QR Code scan**. All sessions are encrypted locally in `sessions/` using Fernet (AES-128-CBC + HMAC-SHA256) with a PBKDF2-derived key (`480,000` iterations). New logins automatically receive a sticky mobile device fingerprint.
@@ -285,9 +293,10 @@ Authenticate accounts via **Phone Number (OTP + 2FA)**, **Telegram Desktop TData
 02 - Scrape Hidden Members (from Group's Messages/Mentions)
 03 - Dry-Run / Preview Target Group (Check roster visibility & sample 5 members)
 04 - Export & Filter Scraped Members (Save as .txt @usernames, .json, or filtered .csv)
+05 - Import External ID / @Username List (.txt / .csv into members.csv)
 00 - Go Back
 ```
-- Supports on-the-fly filtering (**only users with `@username`** and/or **exclude `long_time_ago` inactive users**).
+- Supports on-the-fly filtering (**only users with `@username`** and/or **activity window** filtering).
 - Checkpoints progress every 50 members to `scrape_checkpoint.json` for instant Ctrl+C resume.
 - Writes post-run stats to `logs/last_run_summary.txt`.
 
@@ -302,6 +311,7 @@ Authenticate accounts via **Phone Number (OTP + 2FA)**, **Telegram Desktop TData
 01 - Rush Adder (Remove user from 'members.csv' after adding)
 02 - Calm Adder (Keep user in 'members.csv' after adding)
 03 - Dry-Run / Preview Adder (Check target group permissions & estimate time)
+04 - Import External ID / @Username List (.txt / .csv into members.csv)
 00 - Go Back
 ```
 - **Dry-Run Adder Preview (`03`):** Verifies target group invite permissions (`can_invite_users`), active accounts, and estimated run time without sending invites.
@@ -312,13 +322,14 @@ Authenticate accounts via **Phone Number (OTP + 2FA)**, **Telegram Desktop TData
 - Includes **`[d]ry-run preview`** to check active accounts, recipient counts, and estimated duration before sending DMs.
 - Removes messaged users from `members.csv` on success so interrupted broadcasts can resume cleanly.
 
-### Option 06 – Proxy Manager &amp; Option 07 – Manage Sessions
+### Option 06 – Proxy Manager &amp; Option 07 – Manage Sessions &amp; Account Health
 - Add, list, test, and stickily bind SOCKS5/SOCKS4/HTTP proxies to accounts (`Option 06`).
-- List masked phone numbers, test live connectivity (`get_me()`), and remove deactivated sessions (`Option 07`).
+- View the **Account Health Dashboard** (`Total` | `Active Ready` | `Cooling Down` | `Inactive`), live `FloodWait` cooldown countdowns, sticky proxy IDs, mobile device profiles, test live connectivity (`get_me()`), remove deactivated sessions, or clear local cooldown timers (`Option 07`).
 
-### Option 08 – AI Lead Finder &amp; Option 09 – Settings
+### Option 08 – AI Lead Finder, Option 09 – Settings &amp; Option 10 – Live Monitors
 - **Option 08 Sub-Menu:** `01 Run Discovery + Scrape`, `02 Manage Niches`, `03 Preview Searches`, `04 Keyword Report`, `05 Discovered Groups`.
-- **Option 09 Sub-Menu:** `01 Volume Preset (Conservative/Moderate/Aggressive)`, `02 Scrape Mode`, `03 Automation Mode`, `04 Discovery Modes`, `05 Advanced Limits`, `06 AI Status`, `07 Test My Setup`, `08 Reset to Defaults`.
+- **Option 09 Sub-Menu:** `01 Volume Preset (Conservative/Moderate/Aggressive)`, `02 Scrape Mode`, `03 Automation Mode`, `04 Discovery Modes`, `05 Advanced Limits`, `06 AI Status`, `07 Test My Setup`, `08 Adder & Broadcast Pacing (Delays & FloodWait Threshold)`, `09 Reset to Defaults`.
+- **Option 10 Sub-Menu:** `01 New-Member Join Monitor (Real-Time Group Joiners -> members.csv)`, `02 Live Keyword Listener (Capture Buying-Intent Senders -> members.csv)`.
 
 </details>
 
@@ -332,6 +343,7 @@ TelegramScraper/
 ├── setup.sh                 # Automated setup & launcher script (macOS/Linux/Termux)
 ├── check_setup.py           # Environment & credential healthcheck (CLI + menu)
 ├── run_summary.py           # Post-run summary renderer & logs/last_run_summary.txt writer
+├── error_translator.py      # Plain-English Telegram RPC error explanations & tips
 ├── configs.py               # Config class, loads .env variables + tunable constants
 ├── crypto.py                # Fernet encryption/decryption for sessions & secrets
 ├── account_manager.py       # Multi-account rotation & cooldown tracking
@@ -358,17 +370,18 @@ TelegramScraper/
 │
 └── funcs/
     ├── ui.py                # Rich console styling, prompts, plain-English error tips
-    ├── helpers.py           # Session loading, filters, CSV/TXT/JSON export helpers
+    ├── helpers.py           # Session loading, filters, CSV/TXT/JSON export & import helpers
     └── options_handlers/
         ├── login.py         # Phone, QR, TData login flows (+ device/proxy at login)
-        ├── scrape_members.py# Visible, hidden, dry-run & export group member workflows
+        ├── scrape_members.py# Visible, hidden, dry-run, export & import group workflows
         ├── scrape_channel.py# Channel audience scraping (comments + discussion)
-        ├── add_members.py   # Rush, calm & dry-run member adding
+        ├── add_members.py   # Rush, calm & dry-run member adding + external list import
         ├── broadcast_message.py # Markdown DM broadcast + dry-run preview
         ├── proxy_manager.py # Add/test/assign proxies
-        ├── manage_sessions.py # List, test, cleanup sessions
+        ├── manage_sessions.py # Account Health Dashboard, test, cleanup & cooldown reset
         ├── ai_lead_finder.py# Niche -> discovery -> scrape (Option 08)
-        ├── settings_menu.py # Settings & Test My Setup screens (Option 09)
+        ├── settings_menu.py # Settings, Test My Setup & Pacing screens (Option 09)
+        ├── live_monitors.py # Real-time Join Monitor & Keyword Listener (Option 10)
         └── about.py         # About screen
 ```
 
